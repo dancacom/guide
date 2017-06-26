@@ -1,0 +1,31 @@
+{
+  "name": "danca-guide",
+  "version": "1.0.0",
+  "description": "Dança.com Styleguide",
+  "main": "index.js",
+  "dependencies": {
+    "bourbon-neat": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbotelhos/danca-guide.git"
+  },
+  "keywords": [
+    "danca",
+    "dança",
+    "danca.com",
+    "dança.com",
+    "styleguide",
+    "css"
+  ],
+  "author": "Dança.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wbotelhos/danca-guide/issues"
+  },
+  "homepage": "https://github.com/wbotelhos/danca-guide#readme"
+}
