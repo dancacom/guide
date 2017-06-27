@@ -20,16 +20,6 @@ rules:
 
   nesting-depth: 3
 
-  property-sort-order:
-    - 1
-    - order:
-      - background-color
-      - background-position
-      - border-bottom
-      - border-left
-      - border-radius
-      - border
-
   single-line-per-selector: 0
 
   ####################################
