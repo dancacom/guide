@@ -1,9 +1,10 @@
 // gulp and gulp-deps
-const gulp       = require("gulp");
-const sass       = require("gulp-sass");
-const cleanCSS   = require("gulp-clean-css");
-const imagemin   = require("gulp-imagemin");
-const livereload = require("gulp-livereload");
+const gulp        = require("gulp");
+const sass        = require("gulp-sass");
+const cleanCSS    = require("gulp-clean-css");
+const imagemin    = require("gulp-imagemin");
+const livereload  = require("gulp-livereload");
+const browserSync = require("browser-sync").create();
 
 // sass to css
 gulp.task("sass", () => {
@@ -33,8 +34,9 @@ gulp.task("watch", () => {
 // server with browserSync
 gulp.task("serve", ["sass"], () => {
   browserSync.init({
+    port: 8000,
     server: {
-      baseDir: config.mainFile
+      baseDir: "./dist/"
     }
   });
 

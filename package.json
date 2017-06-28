@@ -7,6 +7,7 @@
     "bourbon-neat": "^2.0.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.4.2",
     "gulp-imagemin": "^3.3.0",
