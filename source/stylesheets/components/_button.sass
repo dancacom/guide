@@ -1,10 +1,14 @@
 .button
-  border: 0
-  border-radius: 4px
   background-color: get-color(ocean)
+  border: 2px solid get-color(ocean)
+  border-radius: 4px
   box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
-  color: #fff
+  color: get-color(air)
   font-family: font-family()
   font-size: 14px
   padding: 12px
+  text-align: center
   text-transform: uppercase
+
+  &--fluid
+    width: 100%

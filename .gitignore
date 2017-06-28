@@ -60,3 +60,6 @@ typings/
 # SASS files
 .sass-cache/
 *.css.map
+
+# Dist files
+dist/

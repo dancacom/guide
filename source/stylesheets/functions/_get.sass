@@ -1,4 +1,4 @@
-@function map-deep-get($map, $keys...)
+@function get($map, $keys...)
   @each $key in $keys
     $map: map-get($map, $key)
 
