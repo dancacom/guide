@@ -4,7 +4,8 @@
   "description": "Dança.com Styleguide",
   "main": "index.html",
   "dependencies": {
-    "bourbon-neat": "^2.0.0"
+    "bourbon-neat": "^2.0.0",
+    "reset-css": "^2.2.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.12",
