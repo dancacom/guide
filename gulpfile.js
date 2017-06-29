@@ -4,9 +4,9 @@ const livereload  = require('gulp-livereload');
 const browserSync = require('browser-sync').create();
 
 gulp.task('sass', () => {
-  return gulp.src('./source/style/main.sass')
+  return gulp.src('./source/stylesheets/main.sass')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist/style/'));
+    .pipe(gulp.dest('./dist/stylesheets/'));
 });
 
 gulp.task('views', () => {
@@ -16,8 +16,8 @@ gulp.task('views', () => {
 
 gulp.task('watch', () => {
   livereload.listen();
-  gulp.watch('./source/style/**/*', ['sass']);
-  gulp.watch('./source/views/**/*', ['views']);
+  gulp.watch('./source/stylesheets/**/*', ['sass']);
+  gulp.watch('./source/views/**/*',       ['views']);
 });
 
 gulp.task('serve', ['sass'], () => {
