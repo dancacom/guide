@@ -4,4 +4,4 @@
 
   $colorFromPalette: get($palette, $color, $key)
 
-  @return if ($opacity < 1, rgba($colorFromPalette, $opacity), $colorFromPalette)
+  @return if($opacity < 1, rgba($colorFromPalette, $opacity), $colorFromPalette)
