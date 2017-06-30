@@ -15,9 +15,8 @@ gulp.task('views', () => {
 gulp.task('watch', () => {
   require('gulp-livereload').listen();
 
-  gulp
-    .watch('./source/stylesheets/**/*', ['sass'])
-    .watch('./source/views/**/*',       ['views']);
+  gulp.watch('./source/stylesheets/**/*', ['sass']);
+  gulp.watch('./source/views/**/*',       ['views']);
 });
 
 gulp.task('serve', ['sass'], () => {
