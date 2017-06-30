@@ -1,9 +1,8 @@
-const gulp        = require('gulp');
-const sass        = require('gulp-sass');
-const livereload  = require('gulp-livereload');
-const browserSync = require('browser-sync').create();
+const gulp = require('gulp');
 
 gulp.task('sass', () => {
+  const sass = require('gulp-sass');
+
   return gulp.src('./source/stylesheets/main.sass')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./dist/stylesheets'));
@@ -14,7 +13,7 @@ gulp.task('views', () => {
 });
 
 gulp.task('watch', () => {
-  livereload.listen();
+  require('gulp-livereload').listen();
 
   gulp
     .watch('./source/stylesheets/**/*', ['sass'])
@@ -22,6 +21,8 @@ gulp.task('watch', () => {
 });
 
 gulp.task('serve', ['sass'], () => {
+  const browserSync = require('browser-sync').create();
+
   browserSync.init({
     port: 8000,
     server: {
