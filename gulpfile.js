@@ -10,8 +10,7 @@ gulp.task('sass', () => {
 });
 
 gulp.task('views', () => {
-  return gulp.src('./source/views/**/*')
-    .pipe(gulp.dest('./dist/views'));
+  return gulp.src('./source/views/**/*').pipe(gulp.dest('./dist/views'));
 });
 
 gulp.task('watch', () => {
