@@ -1,10 +1,10 @@
 {
   "name": "danca-guide",
-  "version": "1.0.0",
-  "description": "Dança.com Styleguide",
+  "version": "0.1.0",
+  "description": "Dança.com - Styleguide",
   "main": "index.html",
   "dependencies": {
-    "bourbon-neat": "^2.0.0",
+    "bourbon-neat": "^2.1.0",
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {
@@ -21,12 +21,16 @@
     "url": "git+https://github.com/wbotelhos/danca-guide.git"
   },
   "keywords": [
-    "danca",
-    "dança",
+    "component",
+    "css",
     "danca.com",
     "dança.com",
-    "styleguide",
-    "css"
+    "danca",
+    "dança",
+    "dance",
+    "html",
+    "js",
+    "styleguide"
   ],
   "author": "Dança.com",
   "license": "MIT",
