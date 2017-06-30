@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 gulp.task('sass', () => {
   return gulp.src('./source/stylesheets/main.sass')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist/stylesheets/'));
+    .pipe(gulp.dest('./dist/stylesheets'));
 });
 
 gulp.task('views', () => {
