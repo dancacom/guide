@@ -3,4 +3,27 @@
   border-radius: 3px
   box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
   padding: 20px
+  position: relative
+  text-align: center
   width: 100%
+
+  &--teacher
+    margin-top: 45px
+    padding-top: 0
+
+  &--teacher-left
+    float: right
+    padding-left: (20px + 45px)
+    width: calc(100% - 45px)
+
+  &__avatar
+    border: 5px solid get-color(air)
+    border-radius: 50%
+
+    &--teacher
+      margin: -45px auto 15px
+
+    &--teacher-left
+      left: -45px
+      position: absolute
+      top: 15px
