@@ -11,7 +11,7 @@
     margin-top: 45px
     padding-top: 0
 
-  &--teacher-left
+  &--teacher-mobile
     float: right
     padding-left: (20px + 45px)
     width: calc(100% - 45px)
@@ -21,9 +21,38 @@
     border-radius: 50%
 
     &--teacher
-      margin: -45px auto 15px
+      margin: -45px auto 10px
 
-    &--teacher-left
+    &--teacher-mobile
       left: -45px
       position: absolute
       top: 15px
+
+  &__title
+    color: get-color(rock)
+    font-family: font-family()
+    font-size: 18px
+    font-weight: 700
+    margin: 0 0 10px
+    text-align: center
+
+  &__description
+    color: get-color((color: rock, opacity: .8))
+    font-family: font-family()
+    font-size: 14px
+    margin: 0 0 10px
+    text-align: left
+
+  &__sub-title
+    color: get-color((color: rock, opacity: .6))
+    font-size: 14px
+    font-style: italic
+    margin: 0
+    text-align: left
+
+  &__sub-description
+    color: get-color((color: rock, opacity: .7))
+    font-size: 14px
+    font-weight: 700
+    margin: 5px 0 0
+    text-align: left
