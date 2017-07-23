@@ -2,28 +2,41 @@
   &__title
     color: get-color(rock)
     font-family: font-family()
-    font-size: 18px
+    font-size: 14px
     font-weight: 700
     margin: 0 0 10px
-    text-align: center
+    text-align: left
+
+    +media($breakpoint-medium)
+      font-size: 18px
+      text-align: center
 
   &__description
     color: get-color((color: rock, opacity: .8))
     font-family: font-family()
-    font-size: 14px
+    font-size: 12px
     margin: 0 0 10px
     text-align: left
 
+    +media($breakpoint-medium)
+      font-size: 14px
+
   &__sub-title
     color: get-color((color: rock, opacity: .6))
-    font-size: 14px
+    font-size: 12px
     font-style: italic
     margin: 0
     text-align: left
 
+    +media($breakpoint-medium)
+      font-size: 14px
+
   &__sub-description
     color: get-color((color: rock, opacity: .7))
-    font-size: 14px
+    font-size: 12px
     font-weight: 700
     margin: 5px 0 0
     text-align: left
+
+    +media($breakpoint-medium)
+      font-size: 14px

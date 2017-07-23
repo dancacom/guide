@@ -1,0 +1,43 @@
+.page-header
+  align-items: center
+  background-color: get-color(rumba)
+  background-position: center
+  background-size: cover
+  display: flex
+  margin-bottom: 50px
+  margin-top: 50px
+  overflow: hidden
+  width: 100%
+
+  +media($breakpoint-medium)
+    background-color: get-color(rock)
+    height: 400px
+    margin-top: 0
+
+  &__content
+    text-align: center
+    width: 100%
+
+  &__title
+    color: get-color(gafieira)
+    font-family: font-family()
+    font-size: 24px
+    font-weight: 700
+    width: 100%
+
+    small
+      color: get-color(rock)
+      display: block
+      font-family: font-family()
+      font-size: 20px
+      font-weight: 100
+      margin-top: 5px
+
+    +media($breakpoint-medium)
+      color: get-color(air)
+      font-size: 64px
+
+      small
+        color: get-color((color: air, opacity: .8))
+        font-size: 48px
+        margin-top: 15px

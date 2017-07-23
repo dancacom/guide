@@ -2,16 +2,23 @@
   background-color: get-color(air)
   border-radius: 4px
   box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
-  // padding: 20px
+  margin-bottom: 20px
   position: relative
-  text-align: center
   width: 100%
 
   &--teacher
-    margin-top: 45px
-    padding-top: 0
-
-  &--teacher-mobile
     float: right
-    padding-left: (20px + 45px)
-    width: calc(100% - 45px)
+    padding-top: 0
+    width: calc(100% - 35px)
+
+  +media($breakpoint-medium)
+    text-align: center
+
+    &--teacher
+      float: none
+      margin-top: 45px
+      padding-left: 0
+      width: 100%
+
+  +media($breakpoint-normal)
+    margin-bottom: 0
