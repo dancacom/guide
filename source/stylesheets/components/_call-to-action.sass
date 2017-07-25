@@ -1,0 +1,32 @@
+.call-to-action
+  background-color: get-color(gafieira)
+  margin-bottom: 50px
+  padding: 30px 0
+  text-align: center
+  width: 100%
+
+  &__content
+    display: block
+    margin: 0 auto
+
+    .button
+      display: inline-block
+
+    +media($breakpoint-medium)
+      .button
+        margin-left: 15px
+
+  &__title
+    color: get-color(air)
+    display: block
+    font-size: 18px
+    margin: 0 0 30px
+
+    +media($breakpoint-medium)
+      display: inline-block
+      line-height: 40px
+      margin: 0 15px 0 0
+
+    strong
+      font-size: 18px
+      font-weight: 700
