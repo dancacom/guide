@@ -10,10 +10,6 @@
   &__content
     width: 100%
 
-    &--home
-      padding: 50px 0 0
-      text-align: center
-
   &__title
     color: get-color(gafieira)
     font-family: font-family()
@@ -29,20 +25,26 @@
       font-weight: 100
       margin-top: 5px
 
-  +media($breakpoint-medium)
-    background-color: get-color(rock)
-    height: 400px
-    margin-top: 0
+  &--home
+    .page-header__content
+      padding: 50px 0 0
+      text-align: center
 
-    &__content
-      &--home
+
+  +media($breakpoint-medium)
+    &--home
+      background-color: get-color(rock)
+      height: 400px
+      margin-top: 0
+
+      .page-header__content
         padding: 0
 
-    &__title
-      color: get-color(air)
-      font-size: 64px
+      .page-header__title
+        color: get-color(air)
+        font-size: 64px
 
-      small
-        color: get-color((color: air, opacity: .8))
-        font-size: 48px
-        margin-top: 15px
+        small
+          color: get-color((color: air, opacity: .8))
+          font-size: 48px
+          margin-top: 15px
