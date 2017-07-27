@@ -4,19 +4,15 @@
   background-position: center
   background-size: cover
   display: flex
-  margin-bottom: 50px
-  margin-top: 50px
   overflow: hidden
   width: 100%
 
-  +media($breakpoint-medium)
-    background-color: get-color(rock)
-    height: 400px
-    margin-top: 0
-
   &__content
-    text-align: center
     width: 100%
+
+    &--home
+      padding: 50px 0 0
+      text-align: center
 
   &__title
     color: get-color(gafieira)
@@ -33,7 +29,16 @@
       font-weight: 100
       margin-top: 5px
 
-    +media($breakpoint-medium)
+  +media($breakpoint-medium)
+    background-color: get-color(rock)
+    height: 400px
+    margin-top: 0
+
+    &__content
+      &--home
+        padding: 0
+
+    &__title
       color: get-color(air)
       font-size: 64px
 

@@ -1,6 +1,16 @@
 .section
-  &__schools
-    margin-bottom: 50px
+  margin-top: 50px
 
-  &__teachers
-    margin-bottom: 50px
+  &__header
+    display: flex
+
+  &__content
+    margin-top: 30px
+
+  +media($breakpoint-medium)
+    &__content
+      margin-top: 20px
+
+  +media($breakpoint-normal)
+    &__content
+      margin-top: 40px
