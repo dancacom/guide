@@ -8,13 +8,19 @@
   width: 100%
 
   &__content
-    width: 100%
+    +grid-column(6)
+    padding: 50px 0 0
+
+  &__call
+    +grid-column(6)
+    padding: 50px 0 0
 
   &__title
     color: get-color(gafieira)
     font-family: font-family()
     font-size: 24px
     font-weight: 700
+    line-height: 31px
     width: 100%
 
     small
@@ -27,8 +33,12 @@
 
   &--home
     .page-header__content
-      padding: 50px 0 0
       text-align: center
+      margin: 0
+      width: 100%
+
+    .page-header__title
+      line-height: normal
 
 
   +media($breakpoint-medium)
@@ -48,3 +58,15 @@
           color: get-color((color: air, opacity: .8))
           font-size: 48px
           margin-top: 15px
+
+  +media($breakpoint-normal)
+    &__title
+      font-size: 48px
+
+    &__content
+      +grid-column(4)
+      +grid-push(4)
+      text-align: center
+
+    &__call
+      +grid-column(4)
