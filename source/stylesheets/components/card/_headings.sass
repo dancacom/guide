@@ -4,21 +4,30 @@
     font-family: font-family()
     font-size: 14px
     font-weight: 700
-    margin: 0 0 10px
+    margin: 0
     text-align: left
 
     &--center
       text-align: center
 
+    &--big
+      font-size: 24px
+
+    + .card__description
+      margin-top: 10px
+
     +media($breakpoint-medium)
       font-size: 18px
       text-align: center
+
+      &--big
+        font-size: 24px
 
   &__description
     color: get-color((color: rock, opacity: .8))
     font-family: font-family()
     font-size: 12px
-    margin: 0 0 10px
+    margin: 0
     text-align: left
 
     +media($breakpoint-medium)
@@ -28,7 +37,7 @@
     color: get-color((color: rock, opacity: .6))
     font-size: 12px
     font-style: italic
-    margin: 0
+    margin: 10px 0 0
     text-align: left
 
     +media($breakpoint-medium)

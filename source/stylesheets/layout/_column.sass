@@ -1,4 +1,11 @@
-.card-item
+.big-item
+  +grid-column(12)
+  margin-top: 20px
+
+  +media($breakpoint-medium)
+    +grid-column(6)
+
+.small-item
   +grid-column(12)
   margin-top: 20px
 
@@ -7,3 +14,16 @@
 
   +media($breakpoint-normal)
     +grid-column(3)
+
+.aside
+  +grid-column(12)
+  margin-top: -190px
+
+  +media($breakpoint-normal)
+    +grid-column(4)
+
+.page-content
+  +grid-column(12)
+
+  +media($breakpoint-normal)
+    +grid-column(8)

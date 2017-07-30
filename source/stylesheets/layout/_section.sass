@@ -5,15 +5,11 @@
     display: flex
 
   &__content
-    margin-top: 30px
+    display: inline-block
+    margin-top: 10px
 
   &--top-spacing
     margin-top: 50px
 
-  +media($breakpoint-medium)
-    &__content
-      margin-top: 20px
-
-  +media($breakpoint-normal)
-    &__content
-      margin-top: 40px
+  + .section
+    margin-top: 50px
