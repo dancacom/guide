@@ -5,14 +5,21 @@
   background-size: cover
   display: flex
   overflow: hidden
+  position: relative
   width: 100%
 
+  &__image
+    display: none
+    min-height: 100%
+    min-width: 100%
+    position: absolute
+
   &__content
-    +grid-column(6)
+    +grid-column(5)
     padding: 50px 0 0
 
   &__call
-    +grid-column(6)
+    +grid-column(7)
     padding: 50px 0 0
 
   &__title
@@ -33,22 +40,31 @@
 
   &--home
     .page-header__content
-      text-align: center
       margin: 0
+      text-align: center
       width: 100%
 
     .page-header__title
       line-height: normal
 
+  &--inner-page
+    background-color: get-color(rock)
+    height: 345px
+
+    .page-header__image
+      display: block
 
   +media($breakpoint-medium)
+    &__image
+      display: block
+
     &--home
       background-color: get-color(rock)
       height: 400px
-      margin-top: 0
 
       .page-header__content
         padding: 0
+        position: absolute
 
       .page-header__title
         color: get-color(air)

@@ -5,17 +5,26 @@
   position: relative
   width: 100%
 
+  &--school
+    text-align: left
+
   &--teacher
-    float: right
+    margin-top: 40px
     padding-top: 0
+    text-align: center
+    width: 100%
+
+  &--list
+    float: right
+    margin-top: 0
     width: calc(100% - 35px)
 
   +media($breakpoint-medium)
-    text-align: center
+    &--school
+      text-align: center
 
     &--teacher
       float: none
-      margin-top: 45px
       padding-left: 0
       width: 100%
 
