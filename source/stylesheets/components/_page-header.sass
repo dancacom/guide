@@ -15,13 +15,14 @@
     position: absolute
 
   &__content
-    width: 100%
+    padding-bottom: 8px
+    position: relative
 
   &__call
     display: block
     position: absolute
-    top: 0
     right: 0
+    top: 0
 
   &__title
     color: get-color(gafieira)
@@ -42,6 +43,7 @@
   &--home
     .page-header__content
       margin: 0
+      padding-bottom: 0
       text-align: center
       width: 100%
 
@@ -81,5 +83,9 @@
       font-size: 48px
       line-height: normal
 
+    &__call
+      top: 15px
+
     &__content
+      padding-bottom: 0
       text-align: center

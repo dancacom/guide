@@ -7,11 +7,14 @@
     margin: 0
     text-align: left
 
+    &--big
+      font-size: 24px
+
     &--center
       text-align: center
 
-    &--big
-      font-size: 24px
+    &--list
+      text-align: left
 
     + .card__description
       margin-top: 10px
@@ -22,6 +25,9 @@
 
       &--big
         font-size: 24px
+
+      &--list
+        text-align: center
 
   &__description
     color: get-color((color: rock, opacity: .8))
