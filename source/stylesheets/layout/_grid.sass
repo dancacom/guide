@@ -1,0 +1,23 @@
+.grid
+  &__aside
+    +grid-column(12)
+    margin-top: -190px
+
+    +media($breakpoint-normal)
+      +grid-column(4)
+
+  &__content
+    +grid-column(12)
+
+    +media($breakpoint-normal)
+      +grid-column(8)
+
+  &__school,
+  &__teacher
+    +grid-column(12)
+
+    +media($breakpoint-medium)
+      +grid-column(6)
+
+    +media($breakpoint-normal)
+      +grid-column(3)

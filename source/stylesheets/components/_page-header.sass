@@ -15,12 +15,13 @@
     position: absolute
 
   &__content
-    +grid-column(5)
-    padding: 50px 0 0
+    width: 100%
 
   &__call
-    +grid-column(7)
-    padding: 50px 0 0
+    display: block
+    position: absolute
+    top: 0
+    right: 0
 
   &__title
     color: get-color(gafieira)
@@ -78,11 +79,7 @@
   +media($breakpoint-normal)
     &__title
       font-size: 48px
+      line-height: normal
 
     &__content
-      +grid-column(4)
-      +grid-push(4)
       text-align: center
-
-    &__call
-      +grid-column(4)
