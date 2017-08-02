@@ -1,26 +1,25 @@
 .grid
+  +grid-column(12)
+
   &__aside
-    +grid-column(12)
     margin-top: -190px
 
-    +media($breakpoint-normal)
-      +grid-column(4)
+  &__collapse
+    +grid-collapse
 
-  &__full
-    +grid-column(12)
-
-  &__page-content
-    +grid-column(12)
-
-    +media($breakpoint-normal)
-      +grid-column(8)
-
-  &__school,
-  &__teacher
-    +grid-column(12)
-
-    +media($breakpoint-medium)
+  +media($breakpoint-medium)
+    &__school, &__teacher
       +grid-column(6)
 
-    +media($breakpoint-normal)
+  +media($breakpoint-normal)
+    &__aside
+      +grid-column(4)
+
+    &__course
+      +grid-column(6)
+
+    &__page-content
+      +grid-column(8)
+
+    &__school, &__teacher
       +grid-column(3)
