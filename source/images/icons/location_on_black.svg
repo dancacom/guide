@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_location_on_black_48px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.3">
+        <g id="Lista-Escolas" transform="translate(-39.000000, -724.000000)">
+            <g id="Group-3-Copy" transform="translate(16.000000, 503.000000)">
+                <g id="ic_location_on_black_48px" transform="translate(20.000000, 220.000000)">
+                    <path d="M8,1.33333333 C5.42,1.33333333 3.33333333,3.42 3.33333333,6 C3.33333333,9.5 8,14.6666667 8,14.6666667 C8,14.6666667 12.6666667,9.5 12.6666667,6 C12.6666667,3.42 10.58,1.33333333 8,1.33333333 Z M8,7.66666667 C7.08,7.66666667 6.33333333,6.92 6.33333333,6 C6.33333333,5.08 7.08,4.33333333 8,4.33333333 C8.92,4.33333333 9.66666667,5.08 9.66666667,6 C9.66666667,6.92 8.92,7.66666667 8,7.66666667 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <polygon id="Shape" points="0 0 16 0 16 16 0 16"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
