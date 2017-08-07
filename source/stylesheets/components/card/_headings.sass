@@ -7,6 +7,13 @@
     margin: 0
     text-align: left
 
+    small
+      color: get-color(rock)
+      display: block
+      font-family: font-size()
+      font-size: 16px
+      text-align: center
+
     &--big
       font-size: 24px
 
@@ -33,11 +40,14 @@
     color: get-color((color: rock, opacity: .8))
     font-family: font-family()
     font-size: 12px
-    margin: 0
+    margin-bottom: 0
     text-align: left
 
     +media($breakpoint-medium)
       font-size: 14px
+
+    &--big
+      font-size: 18px
 
   &__sub-title
     color: get-color((color: rock, opacity: .6))
@@ -74,7 +84,6 @@
   &__content
     display: flex
     justify-content: space-between
-    margin-top: 10px
 
   &__icon
     display: inline-block
