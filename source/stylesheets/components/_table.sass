@@ -1,0 +1,45 @@
+.table
+  border-collapse: collapse
+  border-radius: 4px
+  width: 100%
+
+  tr
+    border-bottom: 1px solid get-color((color: rock, opacity: .05))
+
+    &:last-child
+      border-bottom: 0
+
+  th
+    background-color: get-color((color: raiz, opacity: .3))
+    color: get-color(axe)
+    font-size: 14px
+    font-weight: 700
+    min-width: 155px
+    padding: 15px 20px
+    text-align: right
+    vertical-align: top
+
+    small
+      display: block
+      font-size: inherit
+      margin-top: 5px
+
+  td
+    color: get-color((color: dark, opacity: .6))
+    font-size: 14px
+    padding: 15px 10px
+    text-align: left
+
+  hr
+    border-bottom: 1px solid get-color((color: rock, opacity: .05))
+    margin: 12px 0
+
+  &__title
+    font-size: 14px
+
+  &__content
+    font-size: 14px
+    margin-top: 10px
+
+    span
+      color: get-color(gafieira)
