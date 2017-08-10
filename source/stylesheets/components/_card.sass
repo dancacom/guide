@@ -3,6 +3,7 @@
   border-radius: 4px
   box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
   position: relative
+  transition: box-shadow .2s ease-in-out
   width: 100%
 
   &--school-big
@@ -19,6 +20,9 @@
     float: right
     margin-top: 0
     width: calc(100% - 35px)
+
+  &:hover
+    box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
 
   +media($breakpoint-medium)
     &--school
