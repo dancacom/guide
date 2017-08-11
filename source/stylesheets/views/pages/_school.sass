@@ -1,5 +1,8 @@
 [data-view="schools.show"]
   .grid
+    &--teacher
+      +grid-column(6)
+
     +media($breakpoint-normal)
-      &--teacher, &--group
+      &--group
         +grid-column(6)
