@@ -4,6 +4,9 @@
   display: inline-block
   width: 100%
 
+  &__contents
+    position: relative
+
   &__content
     +grid-column(12)
     display: flex
@@ -36,6 +39,7 @@
     border-bottom: 3px solid transparent
     color: get-color(rock)
     display: block
+    font-family: font-family()
     font-size: 9px
     font-weight: 700
     line-height: 40px - 3px
@@ -50,9 +54,52 @@
     &:hover
       cursor: pointer
 
+  &__options
+    display: block
+    height: 50px
+    line-height: 50px
+    margin-right: 2.5%
+    position: absolute
+    right: 0
+    top: 0
+
+    .button
+      display: inline-block
+      height: 40px
+      margin-left: 10px
 
   +media($breakpoint-medium)
+    &__logo
+      margin-right: 30px
+      width: 165px
+
+    &__contents
+      +grid-column(12)
+
     &__content
-      display: inline-block
-      height: 50px
+      display: flex
+      height: 80px
+      margin: 0
       width: initial
+
+    &__sub-content
+      border-top: 0
+      clear: none
+      display: inline-block
+      height: 80px
+      width: initial
+
+    &__button
+      border-width: 5px
+      font-size: 14px
+      line-height: 80px - 5px
+      padding: 0 40px
+
+    &__options
+      height: 80px
+      line-height: 80px
+      margin-right: 0
+
+      .button
+        height: 40px
+        margin-left: 40px
