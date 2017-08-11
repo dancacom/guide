@@ -1,5 +1,8 @@
 
 .coming-soon
+  &__body
+    background-color: get-color(air)
+
   &__header
     background-color: get-color(rock, lighter)
     height: 320px
@@ -10,7 +13,13 @@
     background-color: get-color(air)
     margin: -145px auto 0
     max-width: 320px
-    padding: 54px 20px
+    padding: 54px 20px 0
+    width: 100%
+
+  &__logo
+    display: block
+    margin: 0 auto
+    max-width: 190px
     width: 100%
 
   &__title
@@ -19,7 +28,7 @@
     font-size: 24px
     font-weight: 300
     line-height: 34px
-    margin: 0 auto
+    margin: initial auto 0
     max-width: 260px
     text-align: center
 

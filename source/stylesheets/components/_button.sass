@@ -1,8 +1,7 @@
 .button
-  background-color: get-color(gafieira)
+  background-color: get-color(air)
   border-radius: 4px
-  box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
-  color: get-color(air)
+  color: get-color(gafieira)
   display: block
   font-family: font-family()
   font-size: 14px
@@ -11,30 +10,30 @@
   text-decoration: none
   text-transform: uppercase
 
-  &--white
-    background-color: get-color(air)
-    border-color: get-color(rock, lighter)
-    color: get-color(gafieira)
+  &--small
+    font-size: 10px
     font-weight: 700
+    padding: 10px
 
   &--fluid
     width: 100%
 
-  &--no-shadow
-    box-shadow: none
+  &--raise
+    box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
 
-  &--rounded
-    background-color: get-color(air)
-    border: 0
-    border-radius: 50px
-    color: get-color(gafieira)
-    float: right
-    font-size: 10px
-    font-weight: 700
-    padding: 10px 15px
+  &--outline
+    border: 1px solid get-color(rock, lighter)
+
+  &--round
+    border-radius: 100px
+
+  &--primary
+    background-color: get-color(gafieira)
+    color: get-color(air)
 
   &--facebook
     background-color: get-color(zouk)
+    color: get-color(air)
 
   &:hover
     cursor: pointer
