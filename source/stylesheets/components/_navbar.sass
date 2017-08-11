@@ -63,12 +63,18 @@
     right: 0
     top: 0
 
-    .button
-      display: inline-block
-      height: 40px
-      margin-left: 10px
+  &__option
+    border: 0
+    box-shadow: none
+    display: inline-block
+    height: auto
+    margin-left: 20px
+    padding: 0
 
-  +media($breakpoint-medium)
+    .button__text
+      display: none
+
+  +media($breakpoint-normal)
     &__logo
       margin-right: 30px
       width: 165px
@@ -100,6 +106,12 @@
       line-height: 80px
       margin-right: 0
 
-      .button
-        height: 40px
-        margin-left: 40px
+    &__option
+      border: 1px solid get-color(rock, lighter)
+      padding: 12px
+
+      &--feature
+        box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
+
+      .button__text
+        display: inline-block
