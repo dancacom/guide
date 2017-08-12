@@ -7,16 +7,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dança.com - Home</title>
   <link rel="stylesheet" href="../stylesheets/main.css">
-  <style media="screen">
-    .demo-navbar {
-      background-color: #fff;
-      height: 80px;
-      width: 100%;
-    }
-  </style>
 </head>
 <body data-view="pages.home">
-  <div class="demo-navbar"></div>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar__contents">
+        <div class="navbar__content">
+          <img src="../images/icons/logo_dancacom.svg" class="navbar__logo">
+        </div>
+
+        <div class="navbar__sub-content">
+          <ul class="navbar__menu navbar__menu--center">
+            <li class="navbar__link navbar__link--active">
+              <a href="#">
+                <button class="navbar__button navbar__button--active">Home</button>
+              </a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">
+                <button class="navbar__button">Escolas</button>
+              </a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">
+                <button class="navbar__button">Professores</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar__options">
+          <button class="button navbar__option">
+            <img src="../images/icons/search_blue.svg" class="button__icon">
+            <span class="button__text">Buscar</span>
+          </button>
+          <button class="button navbar__option navbar__option--feature">
+            <img src="../images/icons/person_blue.svg" class="button__icon">
+            <span class="button__text">Entrar</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
 
   <header class="page-header page-header--home">
     <img src="http://www.pedescalco.com.br/wp-content/uploads/2016/09/slide1.jpg" class="page-header__image" alt="">

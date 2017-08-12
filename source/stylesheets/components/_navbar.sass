@@ -2,7 +2,10 @@
   background-color: get-color(air)
   box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
   display: inline-block
+  position: fixed
+  top: 0
   width: 100%
+  z-index: 99999
 
   &__contents
     position: relative
@@ -73,6 +76,9 @@
 
     .button__text
       display: none
+
+  &--pinned
+    position: absolute
 
   +media($breakpoint-normal)
     &__logo

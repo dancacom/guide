@@ -7,17 +7,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dança.com - Login</title>
   <link rel="stylesheet" href="../stylesheets/main.css">
-  <style media="screen">
-    .demo-navbar {
-      background-color: #fff;
-      height: 80px;
-      width: 100%;
-      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    }
-  </style>
 </head>
 <body data-view="session.new">
-  <div class="demo-navbar"></div>
+  <nav class="navbar navbar--pinned">
+    <div class="container">
+      <div class="navbar__contents">
+        <div class="navbar__content">
+          <img src="../images/icons/logo_dancacom.svg" class="navbar__logo">
+        </div>
+
+        <div class="navbar__sub-content">
+          <ul class="navbar__menu navbar__menu--center">
+            <li class="navbar__link navbar__link--active">
+              <a href="#">
+                <button class="navbar__button navbar__button--active">Home</button>
+              </a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">
+                <button class="navbar__button">Escolas</button>
+              </a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">
+                <button class="navbar__button">Professores</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar__options">
+          <button class="button navbar__option">
+            <img src="../images/icons/search_blue.svg" class="button__icon">
+            <span class="button__text">Buscar</span>
+          </button>
+          <button class="button navbar__option navbar__option--feature">
+            <img src="../images/icons/person_blue.svg" class="button__icon">
+            <span class="button__text">Entrar</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
 
   <section class="section space__top--normal">
     <div class="container container--small">
