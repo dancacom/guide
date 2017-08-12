@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dança.com - Busca</title>
+  <link rel="stylesheet" href="../stylesheets/main.css">
+</head>
+<body data-view="search.index">
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar__contents">
+        <div class="navbar__content">
+          <img src="../images/icons/logo_dancacom.svg" class="navbar__logo">
+        </div>
+
+        <div class="navbar__sub-content">
+          <ul class="navbar__menu navbar__menu--center">
+            <li class="navbar__link navbar__link--active">
+              <a href="#">
+                <button class="navbar__button navbar__button--active">Home</button>
+              </a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">
+                <button class="navbar__button">Escolas</button>
+              </a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">
+                <button class="navbar__button">Professores</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar__options">
+          <button class="button navbar__option">
+            <img src="../images/icons/search_blue.svg" class="button__icon">
+            <span class="button__text">Buscar</span>
+          </button>
+          <button class="button navbar__option navbar__option--feature">
+            <img src="../images/icons/person_blue.svg" class="button__icon">
+            <span class="button__text">Entrar</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section space__top--normal">
+    <div class="container">
+      <div class="grid grid--search-filter">
+        <div class="card">
+          <div class="search-filter__body">
+            <h2 class="search-filter__title">Digite o que procura</h2>
+
+            <input type="text" class="form__input form__input--fluid space__top--small" placeholder="Digite aqui">
+
+            <h2 class="search-filter__title space__top--large">Filtrar Resultados</h2>
+
+            <label for="rhythm" class="form__label space__top--small">Ritmo</label>
+            <input type="text" class="form__input form__input--fluid form__input--flush space__top--nano" placeholder="Samba">
+
+            <label for="schools" class="form__label space__top--small">Escola ou Professores</label>
+            <input type="text" class="form__input form__input--fluid form__input--flush space__top--nano" placeholder="Escolas">
+
+            <label for="schools" class="form__label space__top--small">Bairros</label>
+            <input type="text" class="form__input form__input--fluid form__input--flush space__top--nano" placeholder="Escolas">
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid--search-results">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eius, minima quis dolores, ipsa fugit possimus veniam esse sapiente harum nesciunt dolorem odio, omnis quasi id? Error eos, magnam nisi.
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer space__top--large"></footer>
+</body>
+</html>
