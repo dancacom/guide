@@ -1,8 +1,30 @@
 [data-view="search.index"]
   .grid
     &--search-filter
-      +grid-column(4)
+      display: none
 
     &--search-results
-      +grid-column(6)
+      +grid-column(12)
+
+    &--uf
+      +grid-column(3)
+
+    &--city
+      +grid-column(8)
       +grid-shift(1)
+
+    +media($breakpoint-normal)
+      &--search-filter
+        +grid-column(5)
+        display: block
+
+      &--search-results
+        +grid-column(7)
+
+    +media($breakpoint-large)
+      &--search-filter
+        +grid-column(4)
+
+      &--search-results
+        +grid-column(6)
+        +grid-shift(1)
