@@ -63,10 +63,15 @@
               <h2 class="search-filter__title space__top--large grid">Filtrar Resultados</h2>
 
               <label for="rhythm" class="form__label space__top--small grid">Ritmo</label>
-              <input type="text" class="form__input form__input--flush space__top--nano grid" placeholder="Samba">
+              <input type="text" class="form__input form__input--flush space__top--nano grid" placeholder="ex. Samba">
 
-              <label for="schools" class="form__label space__top--small grid">Escola ou Professores</label>
-              <input type="text" class="form__input form__input--flush space__top--nano grid" placeholder="Escolas">
+              <label for="schools" class="form__label space__top--small grid">Filtrar por</label>
+              <select name="uf" id="uf" class="form__input form__input--flush grid space__top--nano">
+                <option value="UF" selected disabled>Escola, Professor ou Unidade</option>
+                <option value="SP">Escola</option>
+                <option value="RJ">Professor</option>
+                <option value="MG">Unidade</option>
+              </select>
 
               <div class="grid--uf">
                 <label for="uf" class="form__label space__top--small">Estado</label>
