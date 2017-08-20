@@ -40,6 +40,24 @@
     background-color: get-color(zouk)
     color: get-color(air)
 
+  &--center
+    margin-left: auto
+    margin-right: auto
+
+  &--line
+    margin-left: auto
+    margin-right: auto
+
+    &::before
+      background-color: get-color((color: dark, opacity: .1))
+      content: ''
+      height: 1px
+      left: 0
+      position: absolute
+      top: 50%
+      width: 100%
+      z-index: -1
+
   &__text
     display: inline-block
     margin-left: 8px
