@@ -21,7 +21,6 @@
     box-shadow: inset 0 1px 3px 0 get-color((color: dark, opacity: .2))
     font-family: font-family()
     font-size: 14px
-    height: 47px
     line-height: 14px
     padding: 13px 10px
 
@@ -30,6 +29,10 @@
 
     &--flush
       background-image: linear-gradient(to bottom, get-color(air) 5%, get-color(air) 49%, get-color((color: dark, opacity: 0.05)) 99%)
+
+  &__select
+    @extend .form__input
+    height: 47px
 
   &__label
     color: get-color((color: dark, opacity: .6))
