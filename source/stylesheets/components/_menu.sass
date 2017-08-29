@@ -1,6 +1,7 @@
 .menu
   &__header
     align-items: center
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1)
     display: flex
     padding: 30px
 
@@ -9,13 +10,13 @@
     display: inline-block
     margin-right: 15px
 
-  &__info
+  // &__info
     //
 
   &__user
+    color: get-color((color: dark, opacity: .6))
     font-size: 12px
     font-weight: 700
-    color: get-color((color: dark, opacity: .6))
     text-transform: uppercase
 
   &__logout
@@ -25,10 +26,16 @@
     text-transform: uppercase
 
   &__cluster
+    border-bottom: 1px solid get-color((color: dark, opacity: .1))
+    padding-bottom: 45px
+
+    &:last-child
+      border-bottom: 0
 
   &__icon
     display: inline-block
-    padding: 0 30px
+    padding: 25px 30px 0
+    vertical-align: top
     width: 20px
 
   &__body
@@ -36,5 +43,23 @@
     width: calc(100% - 80px)
 
   &__title
+    color: get-color((color: dark, opacity: .6))
+    display: block
+    font-size: 14px
+    padding: 25px 0
+    text-transform: uppercase
+
+  &__options
+    list-style: none
+    margin: 0
+    padding: 0
 
   &__option
+    border-top: 1px solid get-color((color: dark, opacity: .1))
+    padding: 10px 0
+
+  &__link
+    color: get-color((color: dark, opacity: .6))
+    font-size: 18px
+    font-weight: bold
+    text-align: left

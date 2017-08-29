@@ -7,6 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dança.com - Menu</title>
   <link rel="stylesheet" href="../stylesheets/main.css">
+  <style media="screen">
+    body {
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body data-view="search.index">
   <nav class="navbar">
@@ -215,7 +220,10 @@
 
   <footer class="footer space__top--large"></footer>
 
-  <section class="modal">
+  <section class="modal modal--scroll">
+    <div class="modal__close">
+      <!--  -->
+    </div>
     <div class="menu">
       <div class="menu__header">
         <img src="http://lorempicsum.com/futurama/50/50/1" class="menu__avatar">
@@ -224,43 +232,62 @@
           <span class="menu__user">Rubens Zark</span>
           <a href="#" class="menu__logout space__top--micro">Sair</a>
         </div>
+      </div>
 
-        <div class="menu__cluster">
-          <div class="menu__icon"></div>
-          <div class="menu__body">
-            <span class="menu_title">Principal</span>
-            <ul class="menu__options">
-              <li class="menu__option">Minha conta</li>
-              <li class="menu__option">Meus perfis</li>
-              <li class="menu__option">Dashboard</li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="menu__cluster">
-          <div class="menu__icon"></div>
-          <div class="menu__body">
-            <span class="menu_title">Listagem</span>
-            <ul class="menu__options">
-              <li class="menu__option">Professores</li>
-              <li class="menu__option">Escolas</li>
-              <li class="menu__option">Unidades</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="menu__cluster">
-          <div class="menu__icon"></div>
-          <div class="menu__body">
-            <span class="menu_title">Cadastro</span>
-            <ul class="menu__options">
-              <li class="menu__option">Professores</li>
-              <li class="menu__option">Escolas</li>
-              <li class="menu__option">Unidades</li>
-            </ul>
-          </div>
+      <div class="menu__cluster">
+        <div class="menu__icon"></div>
+        <div class="menu__body">
+          <span class="menu__title">Principal</span>
+          <ul class="menu__options">
+            <li class="menu__option">
+              <a href="#" class="menu__link">Minha conta</a>
+            </li>
+            <li class="menu__option">
+              <a href="#" class="menu__link">Meus perfis</a>
+            </li>
+            <li class="menu__option">
+              <a href="#" class="menu__link">Dashboard</a>
+            </li>
+          </ul>
         </div>
       </div>
+
+      <div class="menu__cluster">
+        <div class="menu__icon"></div>
+        <div class="menu__body">
+          <span class="menu__title">Listagem</span>
+          <ul class="menu__options">
+            <li class="menu__option">
+              <a href="#" class="menu__link">Professores</a>
+            </li>
+            <li class="menu__option">
+              <a href="#" class="menu__link">Escolas</a>
+            </li>
+            <li class="menu__option">
+              <a href="#" class="menu__link">Unidades</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu__cluster">
+          <div class="menu__icon"></div>
+          <div class="menu__body">
+            <span class="menu__title">Cadastro</span>
+            <ul class="menu__options">
+              <li class="menu__option">
+                <a href="#" class="menu__link">Professores</a>
+              </li>
+              <li class="menu__option">
+                <a href="#" class="menu__link">Escolas</a>
+              </li>
+              <li class="menu__option">
+                <a href="#" class="menu__link">Unidades</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </div>
   </section>
 </body>
