@@ -1,17 +1,31 @@
 .menu
+  &__wrapper
+    display: inline-block
+    position: relative
+
+  &__dropdown
+    background-color: get-color(air)
+    box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
+    line-height: normal
+    max-height: 500px
+    min-width: 320px
+    overflow-x: auto
+    position: absolute
+    right: 0
+    top: 95px
+    z-index: 9996
+
   &__header
     align-items: center
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
     display: flex
+    height: 110px
     padding: 30px
 
   &__avatar
     border-radius: 100%
     display: inline-block
     margin-right: 15px
-
-  // &__info
-    //
 
   &__user
     color: get-color((color: dark, opacity: .6))
@@ -57,6 +71,9 @@
   &__option
     border-top: 1px solid get-color((color: dark, opacity: .1))
     padding: 10px 0
+
+    &:last-child
+      padding-bottom: 0
 
   &__link
     color: get-color((color: dark, opacity: .6))
