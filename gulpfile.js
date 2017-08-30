@@ -20,12 +20,17 @@ gulp.task('images', () => {
 		.pipe(gulp.dest('./dist/images'))
 });
 
+gulp.task('scripts', () => {
+  return gulp.src('./source/javascripts/**/*').pipe(gulp.dest('./dist/javascripts'));
+});
+
 gulp.task('watch', () => {
   require('gulp-livereload').listen();
 
   gulp.watch('./source/stylesheets/**/*', ['sass']);
   gulp.watch('./source/views/**/*',       ['views']);
   gulp.watch('./source/images/**/*',      ['images']);
+  gulp.watch('./source/javascripts/**/*', ['scripts']);
 });
 
 gulp.task('serve', ['sass'], () => {
@@ -42,5 +47,5 @@ gulp.task('serve', ['sass'], () => {
 });
 
 gulp.task('default', [
-  'sass', 'views', 'images', 'serve', 'watch'
+  'sass', 'views', 'images', 'scripts', 'serve', 'watch'
 ]);
