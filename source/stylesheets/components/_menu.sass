@@ -1,11 +1,22 @@
 .menu
-  &__wrapper
-    display: inline-block
-    position: relative
+  display: inline-block
+  position: relative
+
+  &::before
+    background-color: get-color((color: dark, opacity: .5))
+    content: ''
+    display: none
+    height: 100%
+    left: 0
+    position: fixed
+    top: 80px
+    width: 100%
+    z-index: 99980
 
   &__dropdown
     background-color: get-color(air)
-    box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
+    // box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
+    display: none
     line-height: normal
     max-height: 500px
     min-width: 320px
@@ -13,7 +24,21 @@
     position: absolute
     right: 0
     top: 95px
-    z-index: 9996
+    z-index: 99990
+
+    &::before
+      background-color: get-color(air)
+      content: ''
+      display: block
+      height: 20px
+      position: fixed
+      width: 20px
+      z-index: 99985
+      top: 90px
+      right: 70px
+      z-index: -1
+      transform: rotate(45deg)
+
 
   &__header
     align-items: center
@@ -80,3 +105,13 @@
     font-size: 18px
     font-weight: bold
     text-align: left
+
+  &--fluid
+    width: 100%
+
+  &--active
+    &::before
+      display: block
+
+    .menu__dropdown
+      display: block

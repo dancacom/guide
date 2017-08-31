@@ -46,13 +46,13 @@
             <img src="../images/icons/search_blue.svg" class="button__icon">
             <span class="button__text">Buscar</span>
           </button>
-          <div class="menu__wrapper" id="menu-dropdown">
-            <button class="button navbar__option navbar__option--feature">
+          <div class="menu" id="menu-dropdown">
+            <button class="button navbar__option navbar__option--feature" id="open">
               <img src="../images/icons/person_blue.svg" class="button__icon">
               <span class="button__text">Entrar</span>
             </button>
 
-            <div class="menu__dropdown">
+            <div class="menu__dropdown menu__dropdown--active" id="body">
               <div class="menu__header">
                 <img src="http://lorempicsum.com/futurama/50/50/1" class="menu__avatar">
 
@@ -123,13 +123,176 @@
     </div>
   </nav>
 
+  <section class="section space__top--normal">
+    <div class="container">
+      <div class="grid grid--search-filter">
+        <div class="card">
+          <div class="search-filter__body">
+            <div class="grid grid--collapse">
+              <h2 class="search-filter__title grid">Digite o que procura</h2>
+
+              <input type="text" class="form__input space__top--small grid" placeholder="Digite aqui">
+
+              <h2 class="search-filter__title space__top--large grid">Filtrar Resultados</h2>
+
+              <label for="category" class="form__label space__top--small grid">Categoria</label>
+              <input type="text" name="category" class="form__input form__input--flush space__top--nano grid" placeholder="ex. Samba">
+
+              <label for="type" class="form__label space__top--small grid">Tipo</label>
+              <select name="type" id="type" class="form__select form__input--flush grid space__top--nano">
+                <option value="UF" selected disabled>Escola, Unidades ou Professores</option>
+                <option value="SP">Escola</option>
+                <option value="RJ">Professor</option>
+                <option value="MG">Unidade</option>
+              </select>
+
+              <div class="grid--uf">
+                <label for="uf" class="form__label space__top--small">Estado</label>
+                <select name="uf" id="uf" class="form__select form__input--fluid form__input--flush space__top--nano">
+                  <option value="UF" selected disabled>UF</option>
+                  <option value="SP">SP</option>
+                  <option value="RJ">RJ</option>
+                  <option value="MG">MG</option>
+                </select>
+              </div>
+
+              <div class="grid--city">
+                <label for="city" class="form__label space__top--small">Cidade</label>
+                <input type="text" class="form__input form__input--fluid form__input--flush space__top--nano" placeholder="Cidade">
+              </div>
+
+              <label for="schools" class="form__label space__top--small grid">Bairros</label>
+              <input type="text" class="form__input form__input--flush space__top--nano grid" placeholder="Escolas">
+
+              <button class="button button--primary button--medium space__top--medium grid">
+                Buscar
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid--search-results">
+        <div class="search-results__header">
+          <button class="button button--round button--primary button--small search-results__button">
+            Filtrar
+          </button>
+          <h2 class="search-results__for">Resultados da busca para</h2>
+          <h1 class="search-results__query space__top--nano">
+            Samba
+            <small>Samba, Escolas e Professores, em São Paulo - SP</small>
+          </h1>
+        </div>
+
+        <div class="space__top--medium">
+          <div class="search-results__result space__top--small">
+            <div class="search-results__avatar"></div>
+            <div class="search-results__content">
+              <h3 class="search-results__title">
+                <a href="#">Cia de Dança</a>
+              </h3>
+
+              <p class="search-results__description space__top--nano">
+                Escola de dança para estilos clássicos como tango, jazz, samba… Os mestres dessa arte vão transformar você.
+              </p>
+            </div>
+          </div>
+
+          <div class="search-results__result space__top--small">
+            <div class="search-results__avatar"></div>
+            <div class="search-results__content">
+              <h3 class="search-results__title">
+                <a href="#">Cia de Dança</a>
+              </h3>
+              <h4 class="search-results__subtitle">
+                Vila Mariana
+              </h4>
+
+              <p class="search-results__description space__top--nano">
+                Escola de dança para estilos clássicos como tango, jazz, samba… Os mestres dessa arte vão transformar você.
+              </p>
+            </div>
+          </div>
+
+          <div class="search-results__result space__top--small">
+            <div class="search-results__avatar search-results__avatar--round"></div>
+            <div class="search-results__content">
+              <h3 class="search-results__title">
+                <a href="#">Rubens Zark</a>
+              </h3>
+
+              <p class="search-results__description space__top--nano">
+                Especializado em danças de salão, mas com a suavidade do ritmo contemporâneo.
+              </p>
+            </div>
+          </div>
+
+          <div class="search-results__result space__top--small">
+            <div class="search-results__avatar"></div>
+            <div class="search-results__content">
+              <h3 class="search-results__title">
+                <a href="#">Cia de Dança</a>
+              </h3>
+
+              <p class="search-results__description space__top--nano">
+                Escola de dança para estilos clássicos como tango, jazz, samba… Os mestres dessa arte vão transformar você.
+              </p>
+
+              <p class="search-results__infos space__top--nano">
+                Avenida dos Pinheiros Verdes, 203 - Pinheiros, São Paulo - SP. CEP: 00000-00
+              </p>
+            </div>
+          </div>
+
+          <div class="search-results__result space__top--small">
+            <div class="search-results__avatar"></div>
+            <div class="search-results__content">
+              <h3 class="search-results__title">
+                <a href="#">Cia de Dança</a>
+              </h3>
+              <h4 class="search-results__subtitle">
+                Vila Mariana
+              </h4>
+
+              <p class="search-results__description space__top--nano">
+                Escola de dança para estilos clássicos como tango, jazz, samba… Os mestres dessa arte vão transformar você.
+              </p>
+
+              <p class="search-results__infos space__top--nano">
+                Avenida dos Pinheiros Verdes, 203 - Pinheiros, São Paulo - SP. CEP: 00000-00
+              </p>
+            </div>
+          </div>
+
+          <div class="space__top--large">
+            <ul class="pagination">
+              <li class="pagination__item pagination__item--active">
+                <a href="" class="pagination__link">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">3</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">4</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer space__top--large"></footer>
 
   <section class="modal modal--scroll modal--mobile">
     <div class="modal__close">
       <!--  -->
     </div>
-    <div class="menu">
+    <div class="menu menu--fluid">
       <div class="menu__header">
         <img src="http://lorempicsum.com/futurama/50/50/1" class="menu__avatar">
 
