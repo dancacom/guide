@@ -4,41 +4,46 @@
   width: 100%
 
   &__content
-    align-items: center
-    display: flex
-    justify-content: space-between
+    display: block
     padding: 40px 0
 
   &__summary
-    display: flex
+    display: block
+    width: 100%
 
   &__logo
-    margin-right: 30px
+    display: block
+    margin-left: auto
+    margin-right: auto
     width: 125px
 
   &__links
     list-style: none
+    margin: 30px 0
     padding: 0
 
   &__link
-    display: inline-block
     font-size: 12px
     font-weight: 700
-    margin-left: 20px
+    margin-bottom: 15px
+    text-align: center
     text-transform: uppercase
 
   &__socials
-    align-self: right
     list-style: none
     padding: 0
+    text-align: center
 
   &__social
     background-color: get-color((color: raiz, opacity: .9))
     border-radius: 100%
     display: inline-block
     height: 30px
-    margin-left: 5px
+    margin-right: 5px
     width: 30px
+
+    &:last-child
+      margin-right: 0
 
   &__info
     background-color: get-color(rumba)
@@ -47,3 +52,30 @@
     font-style: italic
     padding: 15px
     text-align: center
+
+  +media($breakpoint-normal)
+    &__content
+      align-items: center
+      display: flex
+      justify-content: space-between
+
+    &__summary
+      display: flex
+      height: 36px
+      width: auto
+
+    &__logo
+      margin-right: 30px
+
+    &__links
+      margin: 0
+
+    &__link
+      display: inline-block
+      line-height: 36px
+      margin-bottom: 0
+      margin-left: 20px
+
+    &__socials
+      align-self: right
+      text-align: left
