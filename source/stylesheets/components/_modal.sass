@@ -1,6 +1,7 @@
 .modal
   background-color: get-color(air)
   bottom: 0
+  display: none
   position: fixed
   top: 0
   width: 100%
@@ -14,8 +15,5 @@
   &--scroll
     overflow-x: auto
 
-  &--mobile
+  &--active
     display: block
-
-    +media($breakpoint-normal)
-      display: none
