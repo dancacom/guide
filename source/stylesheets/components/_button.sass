@@ -12,6 +12,7 @@
 
   &:hover
     background-color: get-color(air, darker)
+    color: get-color(gafieira)
     cursor: pointer
 
   &--small
@@ -42,6 +43,7 @@
 
     &:hover
       background-color: get-color(gafieira, darker)
+      color: get-color(air)
 
   &--facebook
     background-color: get-color(zouk)
@@ -49,6 +51,7 @@
 
     &:hover
       background-color: get-color(zouk, darker)
+      color: get-color(air)
 
   &--center
     margin-left: auto
@@ -66,7 +69,7 @@
       position: absolute
       top: 50%
       width: 100%
-      z-index: -1
+      z-index: $button-line-before-z
 
   &__text
     display: inline-block
