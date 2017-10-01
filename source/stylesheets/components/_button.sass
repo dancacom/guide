@@ -10,6 +10,10 @@
   text-decoration: none
   text-transform: uppercase
 
+  &:hover
+    background-color: get-color(air, darker)
+    cursor: pointer
+
   &--small
     font-size: 10px
     padding: 10px 15px
@@ -36,9 +40,15 @@
     background-color: get-color(gafieira)
     color: get-color(air)
 
+    &:hover
+      background-color: get-color(gafieira, darker)
+
   &--facebook
     background-color: get-color(zouk)
     color: get-color(air)
+
+    &:hover
+      background-color: get-color(zouk, darker)
 
   &--center
     margin-left: auto
@@ -66,6 +76,3 @@
   &__icon
     display: inline-block
     vertical-align: middle
-
-  &:hover
-    cursor: pointer
