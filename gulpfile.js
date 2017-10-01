@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 
-gulp.task('sass', () => {
+gulp.task('styles', () => {
   const sass = require('gulp-sass');
 
   return gulp.src('./source/stylesheets/main.sass')
@@ -27,13 +27,13 @@ gulp.task('scripts', () => {
 gulp.task('watch', () => {
   require('gulp-livereload').listen();
 
-  gulp.watch('./source/stylesheets/**/*', ['sass']);
+  gulp.watch('./source/stylesheets/**/*', ['styles']);
   gulp.watch('./source/views/**/*',       ['views']);
   gulp.watch('./source/images/**/*',      ['images']);
   gulp.watch('./source/javascripts/**/*', ['scripts']);
 });
 
-gulp.task('serve', ['sass'], () => {
+gulp.task('serve', ['styles'], () => {
   const browserSync = require('browser-sync').create();
 
   browserSync.init({
@@ -47,5 +47,5 @@ gulp.task('serve', ['sass'], () => {
 });
 
 gulp.task('default', [
-  'sass', 'views', 'images', 'scripts', 'serve', 'watch'
+  'styles', 'views', 'images', 'scripts', 'serve', 'watch'
 ]);

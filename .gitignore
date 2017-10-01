@@ -14,7 +14,6 @@
 bower_components
 capybara-email-*.html
 coverage
-dist
 dump.rdb
 log
 node_modules
@@ -23,3 +22,6 @@ public/javascripts
 screenshot_*.html
 screenshot_*.png
 tmp
+dist/images
+dist/javascripts
+dist/views
