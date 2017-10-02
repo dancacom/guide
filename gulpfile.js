@@ -2,9 +2,13 @@ const gulp = require('gulp');
 
 gulp.task('styles', () => {
   const sass = require('gulp-sass');
+  const cleanCSS = require('gulp-clean-css');
+  const autoprefixer = require('gulp-autoprefixer');
 
   return gulp.src('./source/stylesheets/main.sass')
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
+    .pipe(cleanCSS())
     .pipe(gulp.dest('./dist/stylesheets'));
 });
 
