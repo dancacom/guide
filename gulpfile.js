@@ -8,6 +8,13 @@ gulp.task('styles', () => {
   return gulp.src('./source/stylesheets/main.sass')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
+    .pipe(gulp.dest('./dist/stylesheets'));
+});
+
+gulp.task('minify-styles', () => {
+  const cleanCSS = require('gulp-clean-css');
+
+  return gulp.src('./dist/stylesheets/main.css')
     .pipe(cleanCSS())
     .pipe(gulp.dest('./dist/stylesheets'));
 });
@@ -50,6 +57,8 @@ gulp.task('serve', ['styles'], () => {
   gulp.watch('./dist/**/*').on('change', browserSync.reload);
 });
 
-gulp.task('default', [
-  'styles', 'views', 'images', 'scripts', 'serve', 'watch'
-]);
+gulp.task('generate', ['styles', 'views', 'images', 'scripts']);
+
+gulp.task('create-package', ['generate', 'minify-styles']);
+
+gulp.task('dev', ['generate', 'serve', 'watch']);
