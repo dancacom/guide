@@ -1,0 +1,124 @@
+.navbar
+  background-color: get-color(air)
+  box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
+  display: inline-block
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: $navbar-z
+
+  &__contents
+    position: relative
+
+  &__content
+    +grid-column(12)
+    display: flex
+    height: 50px
+
+  &__sub-content
+    border-top: 1px solid get-color((color: rock, opacity: .15))
+    clear: both
+    display: block
+    width: 100%
+
+  &__menu
+    list-style: none
+    margin: 0
+    padding: 0
+    width: 100%
+
+    &--center
+      text-align: center
+
+  &__link
+    display: inline-block
+    margin-right: 10px
+    vertical-align: top
+
+    &:last-child
+      margin-right: 0
+
+  &__button
+    border-bottom: 3px solid transparent
+    color: get-color(rock)
+    display: block
+    font-family: font-family()
+    font-size: 9px
+    font-weight: 700
+    line-height: 40px - 3px
+    padding: 0 25px
+    text-decoration: none
+    text-transform: uppercase
+
+    &--active
+      border-color: get-color(gafieira)
+      color: get-color(gafieira)
+
+    &:hover
+      color: get-color(gafieira)
+      cursor: pointer
+
+  &__options
+    display: block
+    height: 50px
+    line-height: 50px
+    margin-right: 2.5%
+    position: absolute
+    right: 0
+    top: 0
+
+  &__option
+    border: 0
+    box-shadow: none
+    display: inline-block
+    height: auto
+    margin-left: 20px
+    padding: 0
+
+    .button__text
+      display: none
+
+  &--pinned
+    position: absolute
+
+  +grid-media($breakpoint-normal)
+    &__logo
+      margin-right: 30px
+      width: 165px
+
+    &__contents
+      +grid-column(12)
+
+    &__content
+      display: flex
+      height: 80px
+      margin: 0
+      width: initial
+
+    &__sub-content
+      border-top: 0
+      clear: none
+      display: inline-block
+      height: 80px
+      width: initial
+
+    &__button
+      border-width: 5px
+      font-size: 14px
+      line-height: 80px - 5px
+      padding: 0 40px
+
+    &__options
+      height: 80px
+      line-height: 80px
+      margin-right: 0
+
+    &__option
+      border: 1px solid get-color(rock, lighter)
+      padding: 12px
+
+      &--feature
+        box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
+
+      .button__text
+        display: inline-block

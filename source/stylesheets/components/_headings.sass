@@ -1,0 +1,25 @@
+.page
+  &__title
+    color: get-color(gafieira)
+    font-family: font-family()
+    font-size: 24px
+    font-weight: 900
+
+.section
+  &__title
+    +grid-column(12)
+    color: get-color(rock)
+    font-size: 18px
+    font-weight: bold
+    text-align: center
+
+    +grid-media($breakpoint-medium)
+      &--featured
+        font-size: 24px
+
+.owner
+  display: block
+  font-size: 10px
+  font-weight: 700
+  text-align: center
+  text-transform: uppercase

@@ -1,0 +1,103 @@
+.search-filter
+  &__body
+    overflow: auto
+    padding: 30px 25px
+
+  &__title
+    color: get-color(rock)
+    font-family: font-family()
+    font-size: 18px
+    font-weight: 700
+
+.search-results
+  &__header
+    position: relative
+
+  &__button
+    position: absolute
+    right: 0
+    top: 0
+
+  &__for
+    color: get-color(rock)
+    font-family: font-family()
+    font-size: 14px
+
+  &__query
+    color: get-color(rock)
+    font-family: font-family()
+    font-size: 24px
+    font-weight: 700
+
+    small
+      color: get-color((color: dark, opacity: .6))
+      display: block
+      font-size: 16px
+
+  &__avatar
+    background-color: get-color(raiz)
+    border-radius: 4px
+    display: inline-block
+    height: 40px
+    vertical-align: top
+    width: 40px
+
+    &--round
+      border-radius: 100%
+
+  &__content
+    border-bottom: 1px solid get-color((color: rock, opacity: .15))
+    display: inline-block
+    margin-left: 10px
+    padding-bottom: 20px
+    vertical-align: top
+    width: calc(100% - 40px - 15px)
+
+  &__title
+    font-size: 14px
+    font-weight: 700
+
+  &__subtitle
+    color: get-color(rock)
+    font-size: 14px
+    font-weight: 700
+
+  &__description
+    color: get-color((color: dark, opacity: .6))
+    font-family: font-family()
+    font-size: 12px
+
+  &__infos
+    color: get-color((color: dark, opacity: .4))
+    font-size: 11px
+
+  +grid-media($breakpoint-normal)
+    &__button
+      display: none
+
+    &__for
+      font-size: 18px
+
+    &__query
+      small
+        font-size: 14px
+
+    &__avatar
+      height: 65px
+      width: 65px
+
+    &__content
+      margin-left: 15px
+      width: calc(100% - 65px - 30px)
+
+    &__title
+      font-size: 18px
+
+    &__subtitle
+      font-size: 18px
+
+    &__description
+      font-size: 14px
+
+    &__infos
+      font-size: 14px

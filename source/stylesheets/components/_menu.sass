@@ -1,0 +1,128 @@
+.menu
+  display: inline-block
+  position: relative
+
+  &::before
+    background-color: get-color((color: dark, opacity: .5))
+    content: ''
+    display: none
+    height: 100%
+    left: 0
+    position: fixed
+    top: 80px
+    width: 100%
+    z-index: $menu-before-z
+
+  &::after
+    background-color: get-color(air)
+    content: ''
+    display: none
+    height: 20px
+    position: absolute
+    right: 45px
+    top: 90px
+    transform: rotate(45deg)
+    width: 20px
+    z-index: $menu-after-z
+
+  &__dropdown
+    background-color: get-color(air)
+    display: none
+    line-height: normal
+    max-height: 500px
+    min-width: 320px
+    overflow-x: auto
+    position: absolute
+    right: 0
+    top: 95px
+    z-index: $menu-dropdown-z
+
+  &__header
+    align-items: center
+    box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
+    display: flex
+    height: 110px
+    padding: 30px
+
+  &__avatar
+    background-color: get-color(raiz)
+    border-radius: 100%
+    display: inline-block
+    height: 50px
+    margin-right: 15px
+    text-indent: -9999px
+    width: 50px
+
+  &__user
+    color: get-color((color: dark, opacity: .6))
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+
+  &__logout
+    display: block
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+
+  &__cluster
+    border-bottom: 1px solid get-color((color: dark, opacity: .1))
+    padding-bottom: 45px
+
+    &:last-child
+      border-bottom: 0
+
+  &__icon
+    display: inline-block
+    padding: 25px 30px 0
+    vertical-align: top
+    width: 20px
+
+  &__body
+    display: inline-block
+    width: calc(100% - 80px)
+
+  &__title
+    color: get-color((color: dark, opacity: .6))
+    display: block
+    font-size: 14px
+    padding: 25px 0
+    text-transform: uppercase
+
+  &__options
+    list-style: none
+    margin: 0
+    padding: 0
+
+  &__option
+    border-top: 1px solid get-color((color: dark, opacity: .1))
+    padding: 10px 0
+
+    &:last-child
+      padding-bottom: 0
+
+  &__link
+    background-image: url('..images/icons/blue-arrow-to-right.svg')
+    background-position: right center
+    background-repeat: no-repeat
+    color: get-color((color: dark, opacity: .6))
+    display: block
+    font-size: 18px
+    font-weight: bold
+    text-align: left
+    width: calc(100% - 20px)
+
+  &--fluid
+    width: 100%
+
+  &--active
+    &::before
+      display: block
+
+    .menu__dropdown
+      display: block
+
+  +grid-media($breakpoint-normal)
+    &--active
+      &::after
+        display: block

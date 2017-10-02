@@ -1,0 +1,37 @@
+.card
+  background-color: get-color(air)
+  border-radius: 4px
+  box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
+  position: relative
+  transition: box-shadow .2s ease-in-out
+  width: 100%
+
+  &--school-big
+    margin-top: 45px
+    padding-top: 0
+    text-align: center
+
+  &--teacher
+    margin-top: 40px
+    padding-top: 0
+    text-align: center
+
+  &--list
+    float: right
+    margin-top: 0
+    width: calc(100% - 35px)
+
+  +grid-media($breakpoint-medium)
+    &--school
+      min-height: 300px
+      text-align: center
+
+    &--teacher
+      float: none
+      margin-top: 35px
+      min-height: 220px
+      padding-left: 0
+      width: 100%
+
+  +grid-media($breakpoint-normal)
+    margin-bottom: 0

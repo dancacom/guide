@@ -1,0 +1,26 @@
+.grid
+  +grid-column(12)
+  padding: 0
+
+  &--aside
+    margin-top: -190px
+
+  &--collapse
+    +grid-collapse
+
+  +grid-media($breakpoint-medium)
+    &--school, &--teacher, &--unity
+      +grid-column(6)
+
+  +grid-media($breakpoint-normal)
+    &--aside
+      +grid-column(4)
+
+    &--course
+      +grid-column(6)
+
+    &--page-content
+      +grid-column(8)
+
+    &--school, &--teacher
+      +grid-column(3)

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_thumb_up_black_24px copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Professor" transform="translate(-38.000000, -1929.000000)">
+            <g id="Group-11" transform="translate(14.000000, 1448.000000)">
+                <g id="ic_thumb_up_black_24px-copy-3" transform="translate(23.000000, 480.000000)">
+                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    <path d="M2,10 L2,9 L1,10 L2,10 Z M4,10 L5,10 L4,9 L4,10 Z M4,20 L4,21 L5,20 L4,20 Z M2,20 L1,20 L2,21 L2,20 Z M2,20 L2,10 L4,10 L4,20 L2,20 Z M21.9986607,9.94845676 C21.9713669,9.42419677 21.5304355,9 21,9 L13.4607445,9 L14.6519312,3.26976494 L14.67,3.11 C14.67,2.97880281 14.6151814,2.84939496 14.5262523,2.76045002 L14.1738725,2.41139447 L8.28735496,8.30672593 C8.1036743,8.48544225 8,8.72990881 8,9 L8,19 C8,19.5477153 8.45228475,20 9,20 L18,20 C18.4085078,20 18.7652651,19.7593637 18.9207875,19.3862381 L21.9287572,12.3656007 C21.9771373,12.2419627 22,12.1252426 22,12 L22,10.5042136 L21.9370587,10.4412723 L21.9986607,9.94845676 Z" id="Shape" stroke="#AFBED6" stroke-width="2" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

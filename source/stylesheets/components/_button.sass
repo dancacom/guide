@@ -1,14 +1,81 @@
 .button
-  background-color: get-color(ocean)
-  border: 2px solid get-color(ocean)
+  background-color: get-color(air)
   border-radius: 4px
-  box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
-  color: get-color(air)
+  color: get-color(gafieira)
+  display: block
   font-family: font-family()
   font-size: 14px
   padding: 12px
   text-align: center
+  text-decoration: none
   text-transform: uppercase
+
+  &:hover
+    background-color: get-color(air, darker)
+    color: get-color(gafieira)
+    cursor: pointer
+
+  &--small
+    font-size: 10px
+    padding: 10px 15px
+
+  &--medium
+    padding: 15px
+
+  &--outline
+    border: 1px solid get-color(rock, lighter)
 
   &--fluid
     width: 100%
+
+  &--raise
+    box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
+
+  &--round
+    border-radius: 100px
+
+  &--strong
+    font-weight: 700
+
+  &--primary
+    background-color: get-color(gafieira)
+    color: get-color(air)
+
+    &:hover
+      background-color: get-color(gafieira, darker)
+      color: get-color(air)
+
+  &--facebook
+    background-color: get-color(zouk)
+    color: get-color(air)
+
+    &:hover
+      background-color: get-color(zouk, darker)
+      color: get-color(air)
+
+  &--center
+    margin-left: auto
+    margin-right: auto
+
+  &--line
+    margin-left: auto
+    margin-right: auto
+
+    &::before
+      background-color: get-color((color: dark, opacity: .1))
+      content: ''
+      height: 1px
+      left: 0
+      position: absolute
+      top: 50%
+      width: 100%
+      z-index: $button-line-before-z
+
+  &__text
+    display: inline-block
+    margin-left: 8px
+    vertical-align: middle
+
+  &__icon
+    display: inline-block
+    vertical-align: middle

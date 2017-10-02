@@ -1,6 +1,57 @@
+
 .coming-soon
+  &__body
+    background-color: get-color(air)
+
+  &__header
+    background-color: get-color(rock, lighter)
+    height: 320px
+    width: 100%
+
+  &__box
+    @include grid-container
+    background-color: get-color(air)
+    margin: -145px auto 0
+    max-width: 320px
+    padding: 54px 20px 0
+    width: 100%
+
+  &__logo
+    display: block
+    margin: 0 auto
+    max-width: 190px
+    width: 100%
+
   &__title
-    //
+    color: get-color(rock)
+    font-family: font-family()
+    font-size: 24px
+    font-weight: 300
+    line-height: 34px
+    margin: initial auto 0
+    max-width: 260px
+    text-align: center
+
+    &::after
+      background-color: get-color((color: dark, opacity: .1))
+      content: ''
+      display: block
+      height: 2px
+      margin: 20px auto
+      position: relative
+      width: 100px
+
+    span
+      color: get-color(gafieira)
+      font-size: inherit
+      font-weight: 700
 
   &__subtitle
-    //
+    color: get-color((color: dark, opacity: .6))
+    font-family: font-family()
+    font-size: 14px
+    font-weight: 700
+    line-height: 19px
+    margin: 0 auto 30px
+    max-width: 200px
+    text-align: center

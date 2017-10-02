@@ -1,0 +1,44 @@
+.card
+  &__avatar
+    height: 70px
+    width: 70px
+
+    &--school
+      border-radius: 4px
+      box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
+      height: 45px
+      margin-left: 20px
+      margin-top: -30px
+      width: 45px
+
+    &--school-big
+      border-radius: 4px
+      box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
+      height: 90px
+      margin-top: -45px
+      width: 90px
+
+    &--teacher
+      background-color: get-color(raiz)
+      border-radius: 50%
+      border: 5px solid get-color(air)
+      margin: -35px auto 0
+      text-indent: -9999px
+
+    &--list
+      left: -35px
+      margin-top: 15px
+      position: absolute
+
+    +grid-media($breakpoint-medium)
+      &--school
+        height: 65px
+        margin-left: 0
+        width: 65px
+
+      &--teacher
+        display: block
+        left: initial
+        margin: 0 auto -35px
+        position: relative
+        top: -35px

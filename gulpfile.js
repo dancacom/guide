@@ -1,30 +1,45 @@
-const gulp        = require('gulp');
-const sass        = require('gulp-sass');
-const livereload  = require('gulp-livereload');
-const browserSync = require('browser-sync').create();
+const gulp = require('gulp');
 
-gulp.task('sass', () => {
-  return gulp.src('./source/style/main.sass')
+gulp.task('styles', () => {
+  const sass = require('gulp-sass');
+
+  return gulp.src('./source/stylesheets/main.sass')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist/style/'));
+    .pipe(gulp.dest('./dist/stylesheets'));
 });
 
 gulp.task('views', () => {
-  return gulp.src('./source/views/**/*')
-    .pipe(gulp.dest('./dist/views'));
+  return gulp.src('./source/views/**/*').pipe(gulp.dest('./dist/views'));
+});
+
+gulp.task('images', () => {
+  const imagemin = require('gulp-imagemin');
+
+  return gulp.src('./source/images/**/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('./dist/images'))
+});
+
+gulp.task('scripts', () => {
+  return gulp.src('./source/javascripts/**/*').pipe(gulp.dest('./dist/javascripts'));
 });
 
 gulp.task('watch', () => {
-  livereload.listen();
-  gulp.watch('./source/style/**/*', ['sass']);
-  gulp.watch('./source/views/**/*', ['views']);
+  require('gulp-livereload').listen();
+
+  gulp.watch('./source/stylesheets/**/*', ['styles']);
+  gulp.watch('./source/views/**/*',       ['views']);
+  gulp.watch('./source/images/**/*',      ['images']);
+  gulp.watch('./source/javascripts/**/*', ['scripts']);
 });
 
-gulp.task('serve', ['sass'], () => {
+gulp.task('serve', ['styles'], () => {
+  const browserSync = require('browser-sync').create();
+
   browserSync.init({
     port: 8000,
     server: {
-      baseDir: './dist/'
+      baseDir: './dist'
     }
   });
 
@@ -32,5 +47,5 @@ gulp.task('serve', ['sass'], () => {
 });
 
 gulp.task('default', [
-  'sass', 'views', 'serve', 'watch'
+  'styles', 'views', 'images', 'scripts', 'serve', 'watch'
 ]);

@@ -1,0 +1,23 @@
+.modal
+  background-color: get-color(air)
+  bottom: 0
+  display: none
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: $modal-z
+
+  &__close
+    position: absolute
+    right: 20px
+    top: 20px
+    z-index: $modal-close-z
+
+    &:hover
+      cursor: pointer
+
+  &--scroll
+    overflow-x: auto
+
+  &--active
+    display: block
