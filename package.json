@@ -10,6 +10,8 @@
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
     "gulp-imagemin": "^3.3.0",
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^3.1.0"
