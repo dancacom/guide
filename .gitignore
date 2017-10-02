@@ -22,6 +22,5 @@ public/javascripts
 screenshot_*.html
 screenshot_*.png
 tmp
-dist/images
 dist/javascripts
 dist/views
