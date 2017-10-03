@@ -1,0 +1,114 @@
+#notify
+  position: fixed
+  top: 0
+  width: calc(100% - 10px - 10px)
+  z-index: $notify-z
+
+  &.top-left
+    left: 20px
+    right: auto
+
+  &.bottom-right
+    bottom: 20px
+    left: auto
+    right: 20px
+    top: auto
+
+  &.bottom-left
+    bottom: 20px
+    left: 20px
+    right: auto
+    top: auto
+
+  > div
+    background-color: rgba(0, 0, 0, 0.7)
+    border-radius: 3px
+    cursor: pointer
+    display: none
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+    margin: 10px
+    padding: 15px
+    position: relative
+    width: 100%
+
+    &:hover
+      background-color: rgba(0, 0, 0, 0.8)
+
+    &.notify-icon
+      padding: 15px
+
+    &.notify-image
+      padding-left: 69px
+
+  i
+    color: #fefefe
+    font-size: 17px
+    opacity: 0.4
+    padding: 14px
+    position: absolute
+    right: 0
+    text-shadow: none
+    top: 0px
+
+  img
+    border-radius: 2px
+    height: 48px
+    left: 12px
+    position: absolute
+    top: 12px
+    width: 48px
+
+  p
+    color: #ddd
+    font-size: 13px
+    letter-spacing: 0.7px
+    margin-bottom: 0
+    margin-top: 0
+    padding-right: 25px
+    word-wrap: break-word
+
+  strong
+    color: #eee
+    display: block
+    font-size: 14px
+    font-weight: bold
+    text-shadow: 1px 1px 0 black
+
+  .details
+    font-size: 13px
+    margin-top: 10px
+    text-align: right
+
+    a
+      color: #efefef
+      cursor: help
+      padding: 5px
+      text-decoration: underline
+
+      &:hover
+        color: white
+        transition: all 0.2s ease-out 0s
+
+    div
+      background-color: #fefefe
+      border-radius: 2px
+      color: #444
+      cursor: text
+      display: none
+      font-family: monospace
+      margin-top: 10px
+      max-height: 300px
+      overflow-y: scroll
+      padding: 10px
+      text-align: left
+
++grid-media($breakpoint-medium)
+  #notify
+    right: 20px
+    top: 20px
+    width: 300px
+
+    > div
+      margin-left: 0
+      margin-right: 0
+      margin-top: 0

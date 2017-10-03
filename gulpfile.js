@@ -24,7 +24,7 @@ gulp.task('style-helpers', () => {
   const base  = './source/stylesheets/';
   const dist  = './dist/stylesheets';
 
-   return paths.forEach((path) => {
+  return paths.forEach((path) => {
     let src = base + path + '/**/*';
     gulp.src(src, { base: base }).pipe(gulp.dest(dist));
   });
