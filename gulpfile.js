@@ -19,6 +19,17 @@ gulp.task('minify-styles', () => {
     .pipe(gulp.dest('./dist/stylesheets'));
 });
 
+gulp.task('style-helpers', () => {
+  const paths = ['functions', 'variables'];
+  const base  = './source/stylesheets/';
+  const dist  = './dist/stylesheets';
+
+   return paths.forEach((path) => {
+    let src = base + path + '/**/*';
+    gulp.src(src, { base: base }).pipe(gulp.dest(dist));
+  });
+});
+
 gulp.task('views', () => {
   return gulp.src('./source/views/**/*').pipe(gulp.dest('./dist/views'));
 });
@@ -59,6 +70,6 @@ gulp.task('serve', ['styles'], () => {
 
 gulp.task('generate', ['styles', 'views', 'images', 'scripts']);
 
-gulp.task('create-package', ['generate', 'minify-styles']);
+gulp.task('create-package', ['generate', 'minify-styles', 'style-helpers']);
 
 gulp.task('dev', ['generate', 'serve', 'watch']);
