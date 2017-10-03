@@ -1,0 +1,59 @@
+.styly
+  position: relative
+
+  label
+    cursor: pointer
+    display: block
+    line-height: 25px
+    padding-left: 35px
+
+    &:active
+      &::before
+        border-color: red
+
+    &:hover
+      color: red
+
+      &::before
+        border-color: red
+
+    &::before
+      border: 2px solid #555
+      color: rgba(0, 0, 0, .1)
+      content: ''
+      cursor: pointer
+      height: 25px
+      left: 0
+      position: absolute
+      user-select: none
+      width: 27px
+
+  input
+    display: none
+
+    &:checked + label
+      &::after
+        border-style: solid
+        border-width: 0 4px 4px 0
+        content: ''
+        display: block
+        height: 15px
+        left: .3px
+        margin-left: 8px
+        margin-top: .5px
+        position: absolute
+        top: 2px
+        width: 10px
+
+  &--checkbox
+    label
+      &::after
+        transform: rotate(45deg)
+
+      &::before
+        border-radius: 4px
+
+  &--radio
+    label
+      &::before
+        border-radius: 100%
