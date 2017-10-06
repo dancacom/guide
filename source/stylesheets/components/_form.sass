@@ -43,39 +43,52 @@
       width: 100%
 
     &--for-checkbox
-      color: get-color((color: dark, opacity: .4))
+      color: get-color((color: dark, opacity: .6))
       display: inline-block
       font-size: 14px
       font-weight: 300
-      padding: 4px 0 4px 34px
+      padding: 12px 0 4px 44px
       position: relative
+      width: 100%
+
+      &:hover
+        cursor: pointer
 
       &::before
         background-color: get-color(air)
         border: solid 1px get-color((color: dark, opacity: .1))
         border-radius: 4px
-        box-shadow: inset 0 1px 3px 0 get-color((color: dark, opacity: .2))
         color: get-color(air)
         content: ''
         display: block
         font-size: 14px
-        height: 22px
+        height: 32px
         left: 0
-        line-height: 22px
+        line-height: 32px
         position: absolute
         text-align: center
         top: 0
-        width: 22px
+        width: 32px
+
+      &::after
+        border-bottom: 3px solid get-color(gafieira)
+        border-right: 3px solid get-color(gafieira)
+        content: ''
+        height: 11px
+        left: 12px
+        opacity: 0
+        position: absolute
+        top: 8px
+        transform: rotate(45deg)
+        width: 7px
 
   &__checkbox
     display: none
     opacity: 0
     visibility: hidden
 
-    &:checked + .form__label::before
-      background-color: get-color(gafieira)
-      box-shadow: none
-      content: '\25CF'
+    &:checked + .form__label::after
+      opacity: 1
 
   &__link
     display: block
