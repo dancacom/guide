@@ -2,40 +2,31 @@
   display: inline-block
   position: relative
 
-  &::before
-    background-color: get-color((color: dark, opacity: .5))
-    content: ''
-    display: none
-    height: 100%
-    left: 0
-    position: fixed
-    top: 80px
-    width: 100%
-    z-index: $menu-before-z
-
-  &::after
-    background-color: get-color(air)
-    content: ''
-    display: none
-    height: 20px
-    position: absolute
-    right: 45px
-    top: 90px
-    transform: rotate(45deg)
-    width: 20px
-    z-index: $menu-after-z
-
   &__dropdown
     background-color: get-color(air)
-    display: none
+    visibility: hidden
     line-height: normal
     max-height: 500px
     min-width: 320px
-    overflow-x: auto
     position: absolute
     right: 0
-    top: 95px
+    top: 100px
+    transform: translateY(-10px)
+    transition: transform ease-in-out 200ms, visibility ease-in-out 200ms
     z-index: $menu-dropdown-z
+
+    &::before
+      background-color: get-color(air)
+      content: ''
+      height: 20px
+      position: absolute
+      right: 40px
+      top: -5px
+      transform: rotate(45deg)
+      width: 20px
+      z-index: $menu-after-z
+
+    &--active
 
   &__header
     align-items: center
@@ -43,6 +34,7 @@
     display: flex
     height: 110px
     padding: 30px
+    position: relative
 
   &__avatar
     background-color: get-color(raiz)
@@ -64,6 +56,11 @@
     font-size: 12px
     font-weight: 700
     text-transform: uppercase
+
+  &__overflow
+    height: 390px
+    overflow-x: auto
+    width: 100%
 
   &__cluster
     border-bottom: 1px solid get-color((color: dark, opacity: .1))
@@ -127,11 +124,9 @@
     width: 100%
 
   &--active
-    &::before
-      display: block
-
     .menu__dropdown
-      display: block
+      visibility: visible
+      transform: translateY(0)
 
   +grid-media($breakpoint-normal)
     &--active
