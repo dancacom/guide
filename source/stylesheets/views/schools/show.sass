@@ -1,4 +1,8 @@
 [data-module='schools.show']
+  .grid
+    &--group
+      +grid-column(12)
+
   .entity__units
     .button--facebook
       float: left
@@ -6,3 +10,8 @@
 
     .message--info
       margin-top: 10px
+
+  +grid-media($breakpoint-medium)
+    .grid
+      &--group
+        +grid-column(6)
