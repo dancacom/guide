@@ -1,6 +1,7 @@
 .card
   &__cover
     border-radius: 4px 4px 0 0
+    display: flex
     height: 110px
     overflow: hidden
     width: 100%
@@ -8,3 +9,11 @@
     img
       min-height: 100%
       min-width: 100%
+
+  &__cover-title
+    color: get-color(air)
+    line-height: 110px
+    position: absolute
+    text-align: center
+    width: 100%
+    z-index: 1
