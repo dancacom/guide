@@ -1,6 +1,8 @@
 .card
   &__avatar
+    background-color: get-color(raiz)
     height: 70px
+    text-indent: -9999px
     width: 70px
 
     &--school
@@ -14,16 +16,17 @@
     &--school-big
       border-radius: 4px
       box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
+      display: block
       height: 90px
-      margin-top: -45px
+      margin: 0 auto -45px
+      position: relative
+      top: -45px
       width: 90px
 
     &--teacher
-      background-color: get-color(raiz)
       border-radius: 50%
       border: 5px solid get-color(air)
       margin: -35px auto 0
-      text-indent: -9999px
 
     &--list
       left: -35px
