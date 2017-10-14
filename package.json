@@ -1,28 +1,23 @@
 {
-  "name": "danca-guide",
-  "version": "0.14.1",
-  "description": "Dança.com - Styleguide",
-  "main": "index.html",
+  "author": "Dança.com",
+  "bugs": {
+    "url": "https://github.com/dancacom/guide/issues"
+  },
   "dependencies": {
     "bourbon-neat": "^2.1.0",
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.12",
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.9.0",
-    "gulp-imagemin": "^3.3.0",
+    "gulp-imagemin": "^3.4.0",
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^3.1.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wbotelhos/danca-guide.git"
-  },
+  "description": "Dança.com - Styleguide",
+  "homepage": "https://github.com/dancacom/guide#readme",
   "keywords": [
     "component",
     "css",
@@ -35,10 +30,15 @@
     "js",
     "styleguide"
   ],
-  "author": "Dança.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wbotelhos/danca-guide/issues"
+  "main": "index.html",
+  "name": "danca-guide",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dancacom/guide.git"
   },
-  "homepage": "https://github.com/wbotelhos/danca-guide#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.14.1"
 }
