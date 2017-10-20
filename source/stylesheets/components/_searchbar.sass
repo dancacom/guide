@@ -1,4 +1,5 @@
 .searchbar
+  align-items: center
   background-color: get-color(air)
   display: flex
   height: 50px
@@ -11,11 +12,18 @@
   &__icon
     margin-right: 10px
 
+  &__button
+    display: none
+    visibility: hidden
+
   &__input
     opacity: 0
     transition: opacity .2s .2s ease-in-out
     visibility: hidden
     width: calc(100% - 28px)
+
+    &:focus, &:active
+      outline: none
 
   &--active
     top: 0
@@ -24,3 +32,42 @@
     .searchbar__input
       opacity: 1
       visibility: visible
+
+  +grid-media($breakpoint-normal)
+    border: 1px solid get-color(rock, lighter)
+    border-radius: 4px
+    height: 42px
+    overflow: hidden
+    padding: 0
+    right: 115px
+    top: 18px;
+    width: 110px
+
+    &:hover
+      background-color: get-color(air, darker)
+      cursor: pointer
+
+    &__icon
+      margin-left: 12px
+
+    &__button
+      color: get-color(gafieira)
+      display: flex
+      font-size: 14px
+      text-transform: uppercase
+      visibility: visible
+
+    &--active
+      width: calc(100% - 310px)
+
+      &:hover
+        background-color: get-color(air)
+        cursor: default
+
+      .searchbar__button
+        display: none
+        visibility: hidden
+
+      .searchbar__input
+        opacity: 1
+        visibility: visible
