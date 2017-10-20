@@ -14,6 +14,7 @@
     +grid-column(12)
     display: flex
     height: 50px
+    position: relative
 
   &__logo-wrapper
     display: flex
@@ -61,24 +62,17 @@
       color: get-color(gafieira)
       cursor: pointer
 
-  &__options
-    display: block
-    height: 50px
-    line-height: 50px
-    margin-right: 2.5%
-    position: absolute
-    right: 0
-    top: 0
-
-  &__option
+  &__user
     border: 0
     box-shadow: none
-    display: inline-block
+    display: flex
     height: auto
-    margin-left: 20px
     padding: 0
+    position: absolute
+    right: 0
+    top: 18px
 
-    .button__text
+    span
       display: none
 
   &--pinned
@@ -96,6 +90,7 @@
       display: flex
       height: 80px
       margin: 0
+      position: initial
       width: initial
 
     &__sub-content
@@ -116,12 +111,10 @@
       line-height: 80px
       margin-right: 0
 
-    &__option
+    &__user
       border: 1px solid get-color(rock, lighter)
+      box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
       padding: 12px
 
-      &--feature
-        box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
-
-      .button__text
+      span
         display: inline-block

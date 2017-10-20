@@ -14,6 +14,16 @@
       <div class="navbar__contents">
         <div class="navbar__content">
           <img src="../images/icons/logo_dancacom.svg" class="navbar__logo">
+
+          <div class="searchbar">
+            <img src="../images/icons/search_blue.svg" class="searchbar__icon">
+            <input type="text" class="form__input form__input--clean searchbar__input" placeholder="Digite o que procura">
+          </div>
+
+          <button class="button navbar__user">
+            <img src="../images/icons/person_blue.svg">
+            <span>Entrar</span>
+          </button>
         </div>
 
         <div class="navbar__sub-content">
@@ -34,17 +44,6 @@
               </a>
             </li>
           </ul>
-        </div>
-
-        <div class="navbar__options">
-          <button class="button navbar__option">
-            <img src="../images/icons/search_blue.svg" class="button__icon">
-            <span class="button__text">Buscar</span>
-          </button>
-          <button class="button navbar__option navbar__option--feature">
-            <img src="../images/icons/person_blue.svg" class="button__icon">
-            <span class="button__text">Entrar</span>
-          </button>
         </div>
       </div>
     </div>
@@ -517,20 +516,29 @@
   </section>
 
   <section class="section space__top--medium">
-    <ul class="pagination">
-      <li class="pagination__item pagination__item--active">
-        <a href="" class="pagination__link">1</a>
-      </li>
-      <li class="pagination__item">
-        <a href="" class="pagination__link">2</a>
-      </li>
-      <li class="pagination__item">
-        <a href="" class="pagination__link">3</a>
-      </li>
-      <li class="pagination__item">
-        <a href="" class="pagination__link">4</a>
-      </li>
-    </ul>
+      <div class="gridy"><input type="hidden" name="sortOrder" value="asc"><input type="hidden" name="sortName" value="name"><input type="hidden" name="page" value="1"><div class="gridy__content"><div class="gridy__head"><div><a class="gridy__sorter gridy__sorter--sorted" href="javascript:void(0);" id="sort-by-name" name="name" rel="asc">Nome</a><div class="i-arrow-up gridy__sorter__icon gridy__sorter__icon--asc"></div></div></div><div class="gridy__body"><div class="grid grid--school space__top--normal">
+          <a href="/escolas/jaime-aroxa-f2f3d66a7978c2077c56d962072c4cdd6cd95d44/unidades/jaime-rio">
+            <div class="card card--school">
+              <div class="card__cover">
+                <img src="https://res.cloudinary.com/danca/image/upload/s---B7SjS-A--/c_fill/v1466366824/default.png" alt="Jaime Rio">
+              </div>
+
+              <img src="https://res.cloudinary.com/danca/image/upload/s---B7SjS-A--/c_fill/v1466366824/default.png" alt="Jaime Rio" class="card__avatar card__avatar--school">
+
+              <div class="card__body card__body--school">
+                <h3 class="card__title">Jaime Rio</h3>
+
+                <p class="card__description space__top--nano"></p>
+
+                  <div class="card__content space__top--nano">
+                    <img src="/assets/icons/location_on_black-dc3ec73de52b49b568ad39fc2d6def539fade173725d8238f32f1443afbc026b.svg" alt="Localização" class="card__icon">
+
+                    <p class="card__additional-info">R. Arnaldo Quintela, 22, Botafogo, Rio de Janeiro - RJ, 22280-070</p>
+                  </div>
+              </div>
+            </div>
+          </a>
+        </div></div></div><div class="gridy__footer"><div class="gridy__message"></div><button class="gridy__refresh i-refresh" title="Recarregar"></button></div><div class="gridy__pagination" disabled="disabled"><a href="javascript:void(0);" rel="01" title="Página 01" class="gridy__pagination__button gridy__pagination__button--active">01</a><a href="javascript:void(0);" rel="02" title="Página 02" class="gridy__pagination__button">02</a><a href="javascript:void(0);" rel="03" title="Página 03" class="gridy__pagination__button">03</a><a href="javascript:void(0);" rel="04" title="Página 04" class="gridy__pagination__button">04</a></div></div>
   </section>
 
   <footer class="footer space__top--large"></footer>

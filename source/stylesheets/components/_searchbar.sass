@@ -1,0 +1,26 @@
+.searchbar
+  background-color: get-color(air)
+  display: flex
+  height: 50px
+  position: absolute
+  right: 36px
+  transition: width .2s ease-in-out
+  width: 18px
+  z-index: $searchbar-z
+
+  &__icon
+    margin-right: 10px
+
+  &__input
+    opacity: 0
+    transition: opacity .2s .2s ease-in-out
+    visibility: hidden
+    width: calc(100% - 28px)
+
+  &--active
+    top: 0
+    width: calc(100% - 36px)
+
+    .searchbar__input
+      opacity: 1
+      visibility: visible
