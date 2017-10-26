@@ -4,8 +4,8 @@
   display: flex
   height: 50px
   position: absolute
-  right: 36px
-  transition: width .2s ease-in-out
+  top: -50px
+  transition: top .2s ease-in-out
   width: 18px
   z-index: $searchbar-z
 
@@ -20,21 +20,27 @@
     width: 100%
 
   &__input
-    opacity: 0
-    transition: opacity .2s .2s ease-in-out
-    visibility: hidden
     width: calc(100% - 28px)
 
     &:focus, &:active
       outline: none
 
+  &__close
+    opacity: 0
+    position: absolute
+    right: 0
+    transition: opacity .2s ease-in-out
+
+    &:hover
+      cursor: pointer
+      opacity: .9
+
   &--active
     top: 0
-    width: calc(100% - 36px)
+    width: 100%
 
-    .searchbar__input
+    .searchbar__close
       opacity: 1
-      visibility: visible
 
   +grid-media($breakpoint-normal)
     border: 1px solid get-color(rock, lighter)
@@ -43,7 +49,8 @@
     overflow: hidden
     padding: 0
     right: 140px
-    top: 18px;
+    top: 18px
+    transition: width .2s ease-in-out
     width: 110px
 
     &:hover
@@ -53,12 +60,20 @@
     &__icon
       margin-left: 12px
 
+    &__input
+      opacity: 0
+      transition: opacity .2s .2s ease-in-out
+      visibility: hidden
+
     &__button
       color: get-color(gafieira)
       display: flex
       font-size: 14px
       text-transform: uppercase
       visibility: visible
+
+    &__close
+      right: 12px
 
     &--active
       width: calc(100% - 345px)
