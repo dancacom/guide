@@ -1,0 +1,28 @@
+.switcher
+  background-color: get-color(air)
+  border: 1px solid get-color(rock, lighter)
+  border-radius: 100px
+
+  &__option
+    border-radius: 100px
+    color: get-color(gafieira)
+    display: inline-block
+    font-size: 10px
+    font-weight: 900
+    padding: 10px 25px
+    text-align: center
+    text-transform: uppercase
+
+    &:hover
+      cursor: pointer
+
+    &--active
+      background-color: get-color(gafieira)
+      color: get-color(air)
+
+      &:hover
+        cursor: default
+
+  &--center
+    margin-left: auto
+    margin-right: auto

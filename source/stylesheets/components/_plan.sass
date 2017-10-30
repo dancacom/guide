@@ -1,0 +1,48 @@
+.plan
+  &__title
+    color: get-color(raiz)
+    font-size: 24px
+    font-weight: 600
+    text-align: center
+
+  &__price
+    color: get-color(rock)
+    font-size: 14px
+    text-align: center
+
+    span
+      color: get-color(gafieira)
+      font-size: 24px
+      font-weight: 600
+
+  &__features
+    list-style: none
+    padding: 0
+
+  &__feature
+    background-color: get-color((color: raiz, opacity: .1))
+    color: get-color((color: dark, opacity: .6))
+    font-size: 14px
+    font-weight: 600
+    padding: 15px
+
+    &:nth-child(even)
+      background-color: get-color(air)
+
+    &--inactive
+      color: get-color((color: dark, opacity: .3))
+
+  &__about
+    +grid-column(4)
+    +grid-push(4)
+
+  &__about-title
+    color: get-color((color: dark, opacity: .6))
+    font-size: 16px
+    font-weight: 600
+    text-align: center
+
+  &__about-content
+    color: get-color((color: dark, opacity: .6))
+    font-size: 16px
+    text-align: center
