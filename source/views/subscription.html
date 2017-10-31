@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dança.com - Contratar Plano</title>
+  <link rel="stylesheet" href="../stylesheets/main.css">
+</head>
+<body data-module="payments.create">
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar__contents">
+        <div class="navbar__content">
+          <img src="../images/icons/logo_dancacom.svg" class="navbar__logo">
+
+          <div class="searchbar">
+            <img src="../images/icons/search_blue.svg" class="searchbar__icon">
+            <span class="searchbar__button">Buscar</span>
+            <input type="text" class="form__input form__input--clean searchbar__input" placeholder="Digite o que procura">
+            <img src="../images/icons/close-modal.svg" class="searchbar__close">
+          </div>
+
+          <button class="button navbar__user">
+            <img src="../images/icons/person_blue.svg">
+            <span>Entrar</span>
+          </button>
+        </div>
+
+        <div class="navbar__sub-content">
+          <ul class="navbar__menu navbar__menu--center">
+            <li class="navbar__link navbar__link--active">
+              <a href="#">
+                <button class="navbar__button navbar__button--active">Home</button>
+              </a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">
+                <button class="navbar__button">Escolas</button>
+              </a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">
+                <button class="navbar__button">Professores</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header space__top--large">
+    <div class="container">
+      <div class="page-header__content grid">
+        <h1 class="page-header__title">
+          Contratar Plano
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <section class="section space__top--normal">
+    <div class="container container--small">
+      <div class="section__content">
+        <div class="switcher switcher--center">
+          <span class="switcher__option switcher__option--active">Cartão de Crédito</span>
+          <span class="switcher__option">Boleto</span>
+        </div>
+      </div>
+
+      <div class="section__content space__top--normal">
+        <label for="type" class="form__label grid">Plano</label>
+        <select name="type" id="type" class="form__select grid space__top--nano">
+          <option value="x" selected disabled>Nome do plano</option>
+          <option value="x">Lorem</option>
+          <option value="x">Lorem</option>
+        </select>
+
+        <select name="type" id="type" class="form__select grid space__top--small">
+          <option value="x" selected disabled>Semestral R$ 399,00</option>
+          <option value="x">Anual R$ 700,00</option>
+        </select>
+
+        <label for="category" class="form__label space__top--normal grid">Número do Cartão:</label>
+        <input type="text" name="category" class="form__input space__top--nano grid" placeholder="0000-0000-0000-0000">
+
+        <label for="category" class="form__label space__top--normal grid">Nome:</label>
+        <input type="text" name="category" class="form__input space__top--nano grid">
+
+        <div class="grid grid--card-info">
+          <label for="category" class="form__label space__top--normal">Data de Vencimento:</label>
+          <input type="text" name="category" class="form__input form__input--fluid space__top--nano" placeholder="00/00">
+        </div>
+
+        <div class="grid grid--card-info">
+          <label for="category" class="form__label space__top--normal">Código de Segurança:</label>
+          <input type="text" name="category" class="form__input form__input--fluid space__top--nano" placeholder="****">
+        </div>
+
+        <button class="button button--primary button--center space__top--normal">Confirmar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer space__top--large"></footer>
+</body>
+</html>
