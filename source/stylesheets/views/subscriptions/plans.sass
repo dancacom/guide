@@ -2,8 +2,13 @@
   .grid
     &--plan
       +grid-column(12)
+      margin-top: 30px
+
+      &:first-child
+        margin-top: 0
 
   +grid-media($breakpoint-normal)
     .grid
       &--plan
         +grid-column(4)
+        margin-top: 0
