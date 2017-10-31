@@ -1,4 +1,6 @@
 .plan
+  display: hide
+
   &__title
     color: get-color(raiz)
     font-size: 24px
@@ -46,3 +48,9 @@
     color: get-color((color: dark, opacity: .6))
     font-size: 16px
     text-align: center
+
+  &--unselected
+    display: none
+
+  &--selected
+    display: flex
