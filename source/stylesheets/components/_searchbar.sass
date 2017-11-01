@@ -37,7 +37,7 @@
 
     &:hover
       cursor: pointer
-      opacity: .9
+      opacity: .7
 
   &--active
     right: 0
@@ -48,6 +48,10 @@
     .searchbar__close
       opacity: 1
       visibility: visible
+
+    .searchbar__close
+      &:hover
+        opacity: .7
 
   +grid-media($breakpoint-normal)
     border: 1px solid get-color(rock, lighter)
