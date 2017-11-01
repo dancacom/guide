@@ -22,6 +22,7 @@
     font-size: 14px
     line-height: 14px
     padding: 13px 10px
+    transition: box-shadow .2s ease-in-out, border .2s ease-in-out
 
     &--fluid
       width: 100%
@@ -32,6 +33,13 @@
     &--clean
       border: 0
       border-radius: 0
+
+    &:hover, &:focus
+      box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
+      outline: none
+
+    &:focus
+      border: 1px solid get-color(gafieira)
 
   &__select
     @extend .form__input
@@ -54,9 +62,6 @@
       padding: 12px 0 4px 44px
       position: relative
       width: 100%
-
-      &:hover
-        cursor: pointer
 
       &::before
         background-color: get-color(air)
@@ -86,6 +91,12 @@
         transform: rotate(45deg)
         width: 7px
 
+      &:hover
+        cursor: pointer
+
+        &::before
+          border: solid 1px get-color(gafieira)
+
   &__checkbox
     display: none
     opacity: 0
@@ -93,6 +104,9 @@
 
     &:checked + .form__label::after
       opacity: 1
+
+    &:checked + .form__label::before
+      border: solid 1px get-color(gafieira)
 
   &__link
     display: block
