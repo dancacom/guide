@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const runSequence = require('run-sequence');
 
 gulp.task('styles', () => {
   const sass = require('gulp-sass');
@@ -68,8 +69,10 @@ gulp.task('serve', ['styles'], () => {
   gulp.watch('./dist/**/*').on('change', browserSync.reload);
 });
 
-gulp.task('generate', ['styles', 'views', 'images', 'scripts']);
+gulp.task('default', () => {
+  runSequence('styles', 'views', 'images', 'scripts', 'serve', 'watch');
+});
 
-gulp.task('create-package', ['generate', 'minify-styles', 'style-helpers']);
-
-gulp.task('dev', ['generate', 'serve', 'watch']);
+gulp.task('build', () => {
+  runSequence('styles', 'views', 'images', 'scripts', 'minify-styles', 'style-helpers');
+});
