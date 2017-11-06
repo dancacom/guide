@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dança.com - Busca</title>
+  <link rel="stylesheet" href="../stylesheets/main.css">
+</head>
+<body data-module="schools.index">
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar__contents">
+        <div class="navbar__content">
+          <img src="../images/icons/logo_dancacom.svg" class="navbar__logo">
+        </div>
+
+        <div class="navbar__sub-content">
+          <ul class="navbar__menu navbar__menu--center">
+            <li class="navbar__link navbar__link--active">
+              <a href="#">
+                <button class="navbar__button navbar__button--active">Home</button>
+              </a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">
+                <button class="navbar__button">Escolas</button>
+              </a>
+            </li>
+            <li class="navbar__link">
+              <a href="#">
+                <button class="navbar__button">Professores</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar__options">
+          <button class="button navbar__option">
+            <img src="../images/icons/search_blue.svg" class="button__icon">
+            <span class="button__text">Buscar</span>
+          </button>
+          <button class="button navbar__option navbar__option--feature">
+            <img src="../images/icons/person_blue.svg" class="button__icon">
+            <span class="button__text">Entrar</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section space__top--normal">
+    <div class="container">
+      <div class="grid grid--search-filter">
+        <div class="card">
+          <div class="search-filter__body">
+            <div class="grid grid--collapse">
+              <h2 class="search-filter__title grid">Digite o que procura</h2>
+
+              <input type="text" class="form__input space__top--small grid" placeholder="Digite aqui">
+
+              <h2 class="search-filter__title space__top--large grid">Filtrar Resultados</h2>
+
+              <label for="category" class="form__label space__top--small grid">Categoria</label>
+              <input type="text" name="category" class="form__input space__top--nano grid" placeholder="ex. Samba">
+
+              <label for="type" class="form__label space__top--small grid">Tipo</label>
+              <select name="type" id="type" class="form__select grid space__top--nano">
+                <option value="UF" selected disabled>Escola, Unidades ou Professores</option>
+                <option value="SP">Escola</option>
+                <option value="RJ">Professor</option>
+                <option value="MG">Unidade</option>
+              </select>
+
+              <div class="grid--search-uf">
+                <label for="uf" class="form__label space__top--small">Estado</label>
+                <select name="uf" id="uf" class="form__select form__input--fluid space__top--nano">
+                  <option value="UF" selected disabled>UF</option>
+                  <option value="SP">SP</option>
+                  <option value="RJ">RJ</option>
+                  <option value="MG">MG</option>
+                </select>
+              </div>
+
+              <div class="grid--search-city">
+                <label for="city" class="form__label space__top--small">Cidade</label>
+                <input type="text" class="form__input form__input--fluid space__top--nano" placeholder="Cidade">
+              </div>
+
+              <label for="schools" class="form__label space__top--small grid">Bairros</label>
+              <input type="text" class="form__input space__top--nano grid" placeholder="Escolas">
+
+              <button class="button button--primary button--medium space__top--medium grid">
+                Buscar
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid--search-body">
+        <div class="search-results__header">
+          <button class="button button--round button--primary button--small search-results__button">
+            Filtrar
+          </button>
+          <h2 class="search-results__for">Resultados da busca para</h2>
+          <h1 class="search-results__query space__top--nano">
+            Samba
+            <small>Samba, Escolas e Professores, em São Paulo - SP</small>
+          </h1>
+        </div>
+
+        <div class="grid grid--collapse space__top--medium">
+          <div class="grid grid--school space__top--normal">
+            <div class="card card--school">
+              <div class="card__cover">
+                <img src="http://lorempicsum.com/futurama/300/300/4" alt="Cover Image">
+              </div>
+
+              <img src="http://lorempicsum.com/simpsons/80/80/8" class="card__avatar card__avatar--school" alt="Lorem" title="Lorem">
+
+              <div class="card__body card__body--school">
+                <h3 class="card__title">Rubens Zark</h3>
+
+                <p class="card__description space__top--nano">
+                  Especializado em danças de salão, mas com o suave ritmo contemporâneo.
+                </p>
+
+                <div class="card__content space__top--nano">
+                  <img src="../images/icons/location_on_black.svg" class="card__icon">
+                  <p class="card__additional-info">Avenida dos Pinheiros Verdes, 203 - Pinheiros, São Paulo - SP</p>
+                </div>
+
+                <div class="card__content space__top--micro">
+                  <div class="card__rating">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                  </div>
+
+                  <div class="card__likes">
+                    <img src="../images/icons/favorite_border_black.svg">
+                    <span>64</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid--school space__top--normal">
+            <div class="card card--school">
+              <div class="card__cover">
+                <img src="http://lorempicsum.com/futurama/300/300/4" alt="Cover Image">
+              </div>
+
+              <img src="http://lorempicsum.com/simpsons/80/80/8" class="card__avatar card__avatar--school" alt="Lorem" title="Lorem">
+
+              <div class="card__body card__body--school">
+                <h3 class="card__title">Rubens Zark</h3>
+
+                <p class="card__description space__top--nano">
+                  Especializado em danças de salão, mas com o suave ritmo contemporâneo.
+                </p>
+
+                <div class="card__content space__top--nano">
+                  <img src="../images/icons/location_on_black.svg" class="card__icon">
+                  <p class="card__additional-info">Avenida dos Pinheiros Verdes, 203 - Pinheiros, São Paulo - SP</p>
+                </div>
+
+                <div class="card__content space__top--micro">
+                  <div class="card__rating">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                  </div>
+
+                  <div class="card__likes">
+                    <img src="../images/icons/favorite_border_black.svg">
+                    <span>64</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid--school space__top--normal">
+            <div class="card card--school">
+              <div class="card__cover">
+                <img src="http://lorempicsum.com/futurama/300/300/4" alt="Cover Image">
+              </div>
+
+              <img src="http://lorempicsum.com/simpsons/80/80/8" class="card__avatar card__avatar--school" alt="Lorem" title="Lorem">
+
+              <div class="card__body card__body--school">
+                <h3 class="card__title">Rubens Zark</h3>
+
+                <p class="card__description space__top--nano">
+                  Especializado em danças de salão, mas com o suave ritmo contemporâneo.
+                </p>
+
+                <div class="card__content space__top--nano">
+                  <img src="../images/icons/location_on_black.svg" class="card__icon">
+                  <p class="card__additional-info">Avenida dos Pinheiros Verdes, 203 - Pinheiros, São Paulo - SP</p>
+                </div>
+
+                <div class="card__content space__top--micro">
+                  <div class="card__rating">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                  </div>
+
+                  <div class="card__likes">
+                    <img src="../images/icons/favorite_border_black.svg">
+                    <span>64</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid--school space__top--normal">
+            <div class="card card--school">
+              <div class="card__cover">
+                <img src="http://lorempicsum.com/futurama/300/300/4" alt="Cover Image">
+              </div>
+
+              <img src="http://lorempicsum.com/simpsons/80/80/8" class="card__avatar card__avatar--school" alt="Lorem" title="Lorem">
+
+              <div class="card__body card__body--school">
+                <h3 class="card__title">Rubens Zark</h3>
+
+                <p class="card__description space__top--nano">
+                  Especializado em danças de salão, mas com o suave ritmo contemporâneo.
+                </p>
+
+                <div class="card__content space__top--nano">
+                  <img src="../images/icons/location_on_black.svg" class="card__icon">
+                  <p class="card__additional-info">Avenida dos Pinheiros Verdes, 203 - Pinheiros, São Paulo - SP</p>
+                </div>
+
+                <div class="card__content space__top--micro">
+                  <div class="card__rating">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                  </div>
+
+                  <div class="card__likes">
+                    <img src="../images/icons/favorite_border_black.svg">
+                    <span>64</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid--school space__top--normal">
+            <div class="card card--school">
+              <div class="card__cover">
+                <img src="http://lorempicsum.com/futurama/300/300/4" alt="Cover Image">
+              </div>
+
+              <img src="http://lorempicsum.com/simpsons/80/80/8" class="card__avatar card__avatar--school" alt="Lorem" title="Lorem">
+
+              <div class="card__body card__body--school">
+                <h3 class="card__title">Rubens Zark</h3>
+
+                <p class="card__description space__top--nano">
+                  Especializado em danças de salão, mas com o suave ritmo contemporâneo.
+                </p>
+
+                <div class="card__content space__top--nano">
+                  <img src="../images/icons/location_on_black.svg" class="card__icon">
+                  <p class="card__additional-info">Avenida dos Pinheiros Verdes, 203 - Pinheiros, São Paulo - SP</p>
+                </div>
+
+                <div class="card__content space__top--micro">
+                  <div class="card__rating">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                  </div>
+
+                  <div class="card__likes">
+                    <img src="../images/icons/favorite_border_black.svg">
+                    <span>64</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid--school space__top--normal">
+            <div class="card card--school">
+              <div class="card__cover">
+                <img src="http://lorempicsum.com/futurama/300/300/4" alt="Cover Image">
+              </div>
+
+              <img src="http://lorempicsum.com/simpsons/80/80/8" class="card__avatar card__avatar--school" alt="Lorem" title="Lorem">
+
+              <div class="card__body card__body--school">
+                <h3 class="card__title">Rubens Zark</h3>
+
+                <p class="card__description space__top--nano">
+                  Especializado em danças de salão, mas com o suave ritmo contemporâneo.
+                </p>
+
+                <div class="card__content space__top--nano">
+                  <img src="../images/icons/location_on_black.svg" class="card__icon">
+                  <p class="card__additional-info">Avenida dos Pinheiros Verdes, 203 - Pinheiros, São Paulo - SP</p>
+                </div>
+
+                <div class="card__content space__top--micro">
+                  <div class="card__rating">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                    <img src="../images/icons/rating_full_activated.svg">
+                  </div>
+
+                  <div class="card__likes">
+                    <img src="../images/icons/favorite_border_black.svg">
+                    <span>64</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid space__top--large">
+            <ul class="pagination">
+              <li class="pagination__item pagination__item--active">
+                <a href="" class="pagination__link">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">3</a>
+              </li>
+              <li class="pagination__item">
+                <a href="" class="pagination__link">4</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer space__top--large"></footer>
+</body>
+</html>

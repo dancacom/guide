@@ -8,7 +8,7 @@
   <title>Dança.com - Busca</title>
   <link rel="stylesheet" href="../stylesheets/main.css">
 </head>
-<body data-view="search.index">
+<body data-module="searches.index">
   <nav class="navbar">
     <div class="container">
       <div class="navbar__contents">
@@ -63,19 +63,19 @@
               <h2 class="search-filter__title space__top--large grid">Filtrar Resultados</h2>
 
               <label for="category" class="form__label space__top--small grid">Categoria</label>
-              <input type="text" name="category" class="form__input form__input--flush space__top--nano grid" placeholder="ex. Samba">
+              <input type="text" name="category" class="form__input space__top--nano grid" placeholder="ex. Samba">
 
               <label for="type" class="form__label space__top--small grid">Tipo</label>
-              <select name="type" id="type" class="form__select form__input--flush grid space__top--nano">
+              <select name="type" id="type" class="form__select grid space__top--nano">
                 <option value="UF" selected disabled>Escola, Unidades ou Professores</option>
                 <option value="SP">Escola</option>
                 <option value="RJ">Professor</option>
                 <option value="MG">Unidade</option>
               </select>
 
-              <div class="grid--uf">
+              <div class="grid--search-uf">
                 <label for="uf" class="form__label space__top--small">Estado</label>
-                <select name="uf" id="uf" class="form__select form__input--fluid form__input--flush space__top--nano">
+                <select name="uf" id="uf" class="form__select form__input--fluid space__top--nano">
                   <option value="UF" selected disabled>UF</option>
                   <option value="SP">SP</option>
                   <option value="RJ">RJ</option>
@@ -83,13 +83,13 @@
                 </select>
               </div>
 
-              <div class="grid--city">
+              <div class="grid--search-city">
                 <label for="city" class="form__label space__top--small">Cidade</label>
-                <input type="text" class="form__input form__input--fluid form__input--flush space__top--nano" placeholder="Cidade">
+                <input type="text" class="form__input form__input--fluid space__top--nano" placeholder="Cidade">
               </div>
 
               <label for="schools" class="form__label space__top--small grid">Bairros</label>
-              <input type="text" class="form__input form__input--flush space__top--nano grid" placeholder="Escolas">
+              <input type="text" class="form__input space__top--nano grid" placeholder="Escolas">
 
               <button class="button button--primary button--medium space__top--medium grid">
                 Buscar
@@ -100,7 +100,7 @@
         </div>
       </div>
 
-      <div class="grid grid--search-results">
+      <div class="grid grid--search-body">
         <div class="search-results__header">
           <button class="button button--round button--primary button--small search-results__button">
             Filtrar

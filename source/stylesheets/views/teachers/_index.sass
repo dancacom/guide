@@ -1,0 +1,36 @@
+[data-module='teachers.index']
+  .grid
+    &--search-filter
+      display: none
+
+    &--search-uf
+      +grid-column(3)
+
+    &--search-city
+      +grid-column(8)
+      +grid-shift(1)
+
+    &--search-body
+      +grid-column(12)
+
+    &--teacher
+      +grid-column(12)
+
+    +grid-media($breakpoint-normal)
+      &--search-filter
+        +grid-column(5)
+        display: block
+
+      &--search-body
+        +grid-column(7)
+
+      &--teacher
+        +grid-column(6)
+
+    +grid-media($breakpoint-large)
+      &--search-filter
+        +grid-column(4)
+
+      &--search-body
+        +grid-column(6)
+        +grid-shift(1)
