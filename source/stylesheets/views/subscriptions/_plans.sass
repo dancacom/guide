@@ -7,8 +7,15 @@
       &:first-child
         margin-top: 0
 
+    &--plan-unity
+      +grid-column(12)
+
   +grid-media($breakpoint-normal)
     .grid
+      &--plan-unity
+        +grid-column(4)
+        +grid-push(4)
+
       &--plan
         +grid-column(4)
         margin-top: 0
