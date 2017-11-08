@@ -55,41 +55,36 @@
       <div class="grid grid--search-filter">
         <div class="card">
           <div class="search-filter__body">
-            <div class="grid grid--collapse">
+            <div class="searcher">
               <h2 class="search-filter__title grid">Digite o que procura</h2>
 
-              <input type="text" class="form__input space__top--small grid" placeholder="Digite aqui">
+              <input type="text" class="form__input form__input--fluid space__top--small grid" placeholder="Digite aqui">
 
               <h2 class="search-filter__title space__top--large grid">Filtrar Resultados</h2>
 
               <label for="category" class="form__label space__top--small grid">Categoria</label>
-              <input type="text" name="category" class="form__input space__top--nano grid" placeholder="ex. Samba">
+              <input type="text" name="category" class="form__input form__input--fluid space__top--nano grid" placeholder="ex. Samba">
 
-              <label for="type" class="form__label space__top--small grid">Tipo</label>
-              <select name="type" id="type" class="form__select grid space__top--nano">
-                <option value="UF" selected disabled>Escola, Unidades ou Professores</option>
-                <option value="SP">Escola</option>
-                <option value="RJ">Professor</option>
-                <option value="MG">Unidade</option>
-              </select>
+              <div class="grid grid--collapse">
+                <div class="grid--search-uf">
+                  <label for="uf" class="form__label space__top--small">Estado</label>
+                  <select name="uf" id="uf" class="form__select form__input--fluid space__top--nano">
+                    <option value="Todos" selected disabled>Todos</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                  </select>
+                </div>
 
-              <div class="grid--search-uf">
-                <label for="uf" class="form__label space__top--small">Estado</label>
-                <select name="uf" id="uf" class="form__select form__input--fluid space__top--nano">
-                  <option value="UF" selected disabled>UF</option>
-                  <option value="SP">SP</option>
-                  <option value="RJ">RJ</option>
-                  <option value="MG">MG</option>
-                </select>
+                <div class="grid--search-city">
+                  <label for="city" class="form__label space__top--small">Cidade</label>
+                  <input type="text" class="form__input form__input--fluid space__top--nano" placeholder="Cidade">
+                </div>
               </div>
 
-              <div class="grid--search-city">
-                <label for="city" class="form__label space__top--small">Cidade</label>
-                <input type="text" class="form__input form__input--fluid space__top--nano" placeholder="Cidade">
-              </div>
 
               <label for="schools" class="form__label space__top--small grid">Bairros</label>
-              <input type="text" class="form__input space__top--nano grid" placeholder="Escolas">
+              <input type="text" class="form__input form__input--fluid space__top--nano grid" placeholder="Escolas">
 
               <button class="button button--primary button--medium space__top--medium grid">
                 Buscar

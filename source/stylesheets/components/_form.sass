@@ -34,22 +34,28 @@
       border: 0
       border-radius: 0
 
-    &:hover, &:focus
-      box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
+    &:hover
+      border: 1px solid get-color((color: dark, opacity: .2))
       outline: none
 
     &:focus
       border: 1px solid get-color(gafieira)
+      outline: none
 
   &__select
     @extend .form__input
     height: 47px
 
+    &--fluid
+      width: 100%
+
   &__label
     color: get-color((color: dark, opacity: .6))
     display: block
+    float: left
     font-size: 14px
     font-weight: 700
+    width: 100%
 
     &--fluid
       width: 100%
