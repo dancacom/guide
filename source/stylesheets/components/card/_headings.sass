@@ -70,6 +70,16 @@
     margin: 5px 0 0
     text-align: left
 
+    span
+      font-weight: 700
+
+      &::after
+        content: ' - '
+
+      &:last-child
+        &::after
+          content: ''
+
     +grid-media($breakpoint-medium)
       font-size: 14px
 
