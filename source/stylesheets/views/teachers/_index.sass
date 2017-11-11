@@ -13,7 +13,15 @@
       +grid-column(8)
 
     &--teacher
-      +grid-column(12)
+      float: left
+      margin-left: 60px
+      margin-top: 20px
+      width: calc(100% - 90px)
+
+    +grid-media($breakpoint-medium)
+      &--teacher
+        +grid-column(12)
+        margin-top: calc(20px + 35px)
 
     +grid-media($breakpoint-normal)
       &--search-filter
