@@ -42,9 +42,23 @@
       border: 1px solid get-color(gafieira)
       outline: none
 
+    &:disabled, &__disabled
+      background-color: get-color(rumba)
+
+      &:hover
+        border: 1px solid get-color((color: dark, opacity: .1))
+        cursor: not-allowed
+
   &__select
     @extend .form__input
     height: 47px
+
+    &:disabled, &__disabled
+      background-color: get-color(rumba)
+
+      &:hover
+        border: 1px solid get-color((color: dark, opacity: .1))
+        cursor: not-allowed
 
     &--fluid
       width: 100%
