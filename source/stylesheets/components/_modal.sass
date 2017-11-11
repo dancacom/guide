@@ -7,14 +7,42 @@
   width: 100%
   z-index: $modal-z
 
+  &__header
+    background-color: get-color(rumba)
+    padding: 36px 30px
+
+  &__title
+    color: get-color(raiz)
+    font-size: 24px
+    font-weight: 700
+
   &__close
     position: absolute
-    right: 20px
-    top: 20px
+    right: 30px
+    top: 42px
     z-index: $modal-close-z
 
     &:hover
       cursor: pointer
+
+  &__body
+    margin-top: 30px
+
+    &--spaced
+      margin: 30px 30px 0
+
+  &__button
+    background-color: get-color(gafieira)
+    bottom: 0
+    color: get-color(air)
+    font-size: 14px
+    padding: 16px
+    position: absolute
+    text-transform: uppercase
+    width: 100%
+
+  &--with-action
+    padding-bottom: 48px
 
   &--scroll
     overflow-x: auto
