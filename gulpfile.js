@@ -61,12 +61,10 @@ gulp.task('serve', ['styles'], () => {
 
   browserSync.init({
     port: 8000,
-    server: {
-      baseDir: './dist'
-    }
+    server: ["./docs", "./dist"]
   });
 
-  gulp.watch('./dist/**/*').on('change', browserSync.reload);
+  gulp.watch('./docs/**/*.*').on('change', browserSync.reload);
 });
 
 gulp.task('default', () => {
