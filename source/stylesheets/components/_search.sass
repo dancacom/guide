@@ -1,10 +1,13 @@
 .search-filter
-  &__card
-    display: none
-
   &__body
+    display: none
     overflow: auto
     padding: 30px 25px
+    width: 100%
+
+    .modal__header,
+    .modal__close
+      display: none
 
   &__title
     color: get-color(rock)
@@ -13,8 +16,8 @@
     font-weight: 700
 
   +grid-media($breakpoint-normal)
-    &__card
-      display: flex
+    &__body
+      display: block
 
 .search-results
   &__header
@@ -79,7 +82,7 @@
     font-size: 11px
 
   +grid-media($breakpoint-normal)
-    &__button
+    &__filter-button
       display: none
 
     &__for
