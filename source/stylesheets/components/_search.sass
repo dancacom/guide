@@ -1,4 +1,7 @@
 .search-filter
+  &__card
+    display: none
+
   &__body
     overflow: auto
     padding: 30px 25px
@@ -9,11 +12,15 @@
     font-size: 18px
     font-weight: 700
 
+  +grid-media($breakpoint-normal)
+    &__card
+      display: flex
+
 .search-results
   &__header
     position: relative
 
-  &__button
+  &__filter-button
     position: absolute
     right: 0
     top: 0

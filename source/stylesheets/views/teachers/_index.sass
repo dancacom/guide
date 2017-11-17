@@ -1,7 +1,7 @@
 [data-module='teachers.index']
   .grid
     &--search-filter
-      display: none
+      +grid-column(12)
 
     &--search-body
       +grid-column(12)
@@ -26,7 +26,6 @@
     +grid-media($breakpoint-normal)
       &--search-filter
         +grid-column(5)
-        display: block
 
       &--search-body
         +grid-column(7)
