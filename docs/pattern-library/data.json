@@ -1,0 +1,82 @@
+{
+    "project_logo": "./../images/icons/logo_dancacom.svg",
+    "project_favicon": "favicon.png",
+    "project_name": "Dança.com Styleguide",
+    "project_url": null,
+    "copyright_start_year": "2017",
+    "client_name": null,
+    "client_url": null,
+    "creators": [
+        {
+            "name": null,
+            "url": null
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#0065E1",
+        "background_color": "#FFFFFF",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#333333",
+        "show_project_name": false,
+        "show_version": true,
+        "max_width": null,
+        "titles": {
+            "library_title": "Styleguide",
+            "pages_title": "Overview",
+            "components_title": "Components"
+        }
+    },
+    "assets": {
+        "css": ["./../stylesheets/main.css"],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "buttons",
+            "title": "Buttons",
+            "components": [
+                {
+                    "group": "buttons",
+                    "name": "default",
+                    "title": "Default",
+                    "type": "size",
+                    "size": [
+                      "small",
+                      "medum"
+                    ],
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                  "group": "buttons",
+                  "name": "small",
+                  "title": "Small",
+                  "options": {
+                    "sample_dark_background": true
+                  }
+                }
+            ]
+        }
+    ],
+    "version": "1.9.5"
+}
