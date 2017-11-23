@@ -1,0 +1,15 @@
+.divider
+  position: relative
+  width: 100%
+
+  &__image
+    display: block
+    margin: 0 auto
+
+  &::before
+    background-color: get-color((color: rock, opacity: .1))
+    content: ''
+    height: 2px
+    position: absolute
+    top: calc(50% - 1px)
+    width: 100%
