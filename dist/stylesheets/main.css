@@ -349,6 +349,13 @@ p {
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   -webkit-transition: -webkit-box-shadow .2s ease-in-out;
   transition: -webkit-box-shadow .2s ease-in-out;
@@ -437,6 +444,17 @@ p {
       top: -35px; } }
 
 .card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px;
   width: 100%; }
   .card__body--school {
@@ -449,10 +467,7 @@ p {
   .card__body--unity {
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+            align-items: flex-start; }
   @media (min-width: 720px) {
     .card__body--teacher {
       padding-left: 20px; } }
