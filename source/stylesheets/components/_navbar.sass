@@ -36,14 +36,17 @@
     right: 0
 
     .button
+      background-color: get-color(air)
       border: 0
-      box-shadow: none
       display: flex
       height: auto
       padding: 0
 
       span
         display: none
+
+      path
+        fill: get-color(gafieira)
 
   +grid-media($breakpoint-normal)
     &__content
@@ -61,12 +64,15 @@
 
     &__menu
       .button
+        background-color: get-color(gafieira)
         border: 1px solid get-color(rock, lighter)
-        box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
         padding: 12px
 
         span
           display: inline-block
 
-        img
+        svg
           margin-right: 5px
+
+        path
+          fill: get-color(air)
