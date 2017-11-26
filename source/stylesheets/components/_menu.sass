@@ -23,6 +23,10 @@
       width: 20px
       z-index: $menu-after-z
 
+    &--active
+      visibility: visible
+      transform: translateY(0)
+
   &__header
     align-items: center
     box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
@@ -118,12 +122,8 @@
   &--fluid
     width: 100%
 
-  &--active
-    .menu__dropdown
-      visibility: visible
-      transform: translateY(0)
-
-  +grid-media($breakpoint-normal)
-    &--active
-      &::after
-        display: block
+  // +grid-media($breakpoint-normal)
+  //   &__dropdown
+  //     &--active
+  //       &::after
+  //         display: block

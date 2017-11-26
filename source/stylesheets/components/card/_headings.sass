@@ -1,7 +1,6 @@
 .card
   &__title
     color: get-color(rock)
-    font-family: font-family()
     font-size: 14px
     font-weight: 700
     margin: 0
@@ -34,7 +33,6 @@
 
   &__description
     color: get-color((color: rock, opacity: .8))
-    font-family: font-family()
     font-size: 12px
     margin-bottom: 0
     text-align: left
@@ -85,7 +83,6 @@
   &__additional-info
     color: get-color((color: dark, opacity: .4))
     display: inline-block
-    font-family: font-family()
     font-size: 11px
     margin: 0
     text-align: left
@@ -107,9 +104,13 @@
 
     span
       color: get-color((color: rock, opacity: .6))
-      font-family: font-family()
       font-size: 12px
       height: 10px
       line-height: 10px
       margin-left: 5px
       margin-top: 7px
+
+    &--featured
+      position: absolute
+      right: 20px
+      top: 20px
