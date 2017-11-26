@@ -1,0 +1,43 @@
+.options
+  list-style: none
+  margin: 0
+  padding: 0
+  width: 100%
+
+  &--center
+    text-align: center
+
+  &__link
+    display: inline-block
+    margin-right: 10px
+    vertical-align: top
+
+    &:last-child
+      margin-right: 0
+
+  &__button
+    border-bottom: 3px solid transparent
+    border-radius: 0
+    color: get-color(rock)
+    display: block
+    font-size: 9px
+    font-weight: 700
+    line-height: 40px - 3px
+    padding: 0 25px
+    text-decoration: none
+    text-transform: uppercase
+
+    &--active
+      border-color: get-color(gafieira)
+      color: get-color(gafieira)
+
+    &:hover
+      color: get-color(gafieira)
+      cursor: pointer
+
+  +grid-media($breakpoint-normal)
+    &__button
+      border-width: 5px
+      font-size: 14px
+      line-height: 80px - 5px
+      padding: 0 40px

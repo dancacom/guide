@@ -7,119 +7,66 @@
   width: 100%
   z-index: $navbar-z
 
-  &__contents
+  &__container
     position: relative
 
   &__content
     +grid-column(12)
+    align-items: center
     display: flex
     height: 50px
     position: relative
 
-  &__logo-wrapper
+  &__logo
     display: flex
 
-  &__sub-content
+    img
+      height: 24px
+
+  &__nav
+    display: flex
     border-top: 1px solid get-color((color: rock, opacity: .15))
-    clear: both
-    display: block
     width: 100%
+
+  &__search
+    overflow: hidden
 
   &__menu
-    list-style: none
-    margin: 0
-    padding: 0
-    width: 100%
-
-    &--center
-      text-align: center
-
-  &__link
-    display: inline-block
-    margin-right: 10px
-    vertical-align: top
-
-    &:last-child
-      margin-right: 0
-
-  &__button
-    border-bottom: 3px solid transparent
-    color: get-color(rock)
-    display: block
-    font-size: 9px
-    font-weight: 700
-    line-height: 40px - 3px
-    padding: 0 25px
-    text-decoration: none
-    text-transform: uppercase
-
-    &--active
-      border-color: get-color(gafieira)
-      color: get-color(gafieira)
-
-    &:hover
-      color: get-color(gafieira)
-      cursor: pointer
-
-  &__user
-    border: 0
-    box-shadow: none
-    display: flex
-    height: auto
-    padding: 0
     position: absolute
     right: 0
-    top: 18px
 
-    span
-      display: none
-
-  &--pinned
-    position: absolute
-
-  +grid-media($breakpoint-normal)
-    height: 80px
-    overflow-y: hidden
-
-    &__logo
-      margin-right: 30px
-      width: 165px
-
-    &__contents
-      +grid-column(12)
-
-    &__content
+    .button
+      border: 0
+      box-shadow: none
       display: flex
-      height: 80px
-      margin: 0
-      position: initial
-      width: initial
-
-    &__sub-content
-      border-top: 0
-      clear: none
-      display: inline-block
-      height: 80px
-      width: initial
-
-    &__button
-      border-width: 5px
-      font-size: 14px
-      line-height: 80px - 5px
-      padding: 0 40px
-
-    &__options
-      height: 80px
-      line-height: 80px
-      margin-right: 0
-
-    &__user
-      border: 1px solid get-color(rock, lighter)
-      box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
-      padding: 12px
+      height: auto
+      padding: 0
 
       span
-        display: inline-block
+        display: none
 
+  +grid-media($breakpoint-normal)
+    &__content
+      height: 80px
+
+    &__logo
       img
-        margin-right: 5px
+        height: 40px
+
+    &__nav
+      border-top: 0
+      left: calc(164px + 60px)
+      position: absolute
+      width: auto
+
+    &__menu
+      .button
+        border: 1px solid get-color(rock, lighter)
+        box-shadow: 0 4px 8px 0 get-color((color: dark, opacity: .1))
+        padding: 12px
+
+        span
+          display: inline-block
+
+        img
+          margin-right: 5px
