@@ -1,15 +1,15 @@
 .menu
   &__dropdown
     background-color: get-color(air)
-    visibility: hidden
     line-height: normal
     max-height: 500px
     min-width: 320px
     position: absolute
     right: 0
-    top: 100px
+    top: 71px
     transform: translateY(-10px)
-    transition: transform ease-in-out 200ms, visibility ease-in-out 200ms
+    transition: transform ease-in-out 100ms, visibility ease-in-out 100ms
+    visibility: hidden
     z-index: $menu-dropdown-z
 
     &::before
@@ -121,9 +121,3 @@
 
   &--fluid
     width: 100%
-
-  // +grid-media($breakpoint-normal)
-  //   &__dropdown
-  //     &--active
-  //       &::after
-  //         display: block
