@@ -8,6 +8,10 @@
     display: block
     padding: 20px
 
+    &--active
+      border: 1px solid get-color(raiz)
+      box-shadow: 0 1px 15px 0 get-color((color: dark, opacity: .1))
+
   &__avatar
     background-color: get-color(raiz)
     border-radius: 100%
@@ -16,19 +20,22 @@
     vertical-align: top
     width: 32px
 
-  &__author
-    color: get-color((color: dark, opacity: .6))
+  &__profile
     display: inline-block
     font-size: 14px
     font-weight: 700
     margin-left: 5px
     vertical-align: -webkit-baseline-middle
 
-    small
-      color: get-color((color: dark, opacity: .4))
-      display: block
-      font-weight: 500
-      line-height: 9px
+  &__name
+    color: get-color((color: dark, opacity: .6))
+
+  &__date
+    color: get-color((color: dark, opacity: .4))
+    display: block
+    font-weight: 500
+    line-height: 9px
+    margin-top: 4px
 
   &__content
     color: get-color((color: dark, opacity: .6))
@@ -64,3 +71,13 @@
       text-align: center
       text-transform: uppercase
       width: 100%
+
+
+  &__replying-to
+    align-items: center
+    display: none
+    justify-content: space-between
+    margin-top: 10px
+
+    &--active
+      display: flex
