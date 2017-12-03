@@ -3,9 +3,17 @@
   width: 100%
   z-index: 1
 
-  &__image
+  &__image,
+  &__title
     display: block
     margin: 0 auto
+
+  &__title
+    display: block
+    width: max-content
+    background-color: get-color(rumba)
+    padding-left: 45px
+    padding-right: 45px
 
   &::before
     background-color: get-color((color: rock, opacity: .1))
