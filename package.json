@@ -41,5 +41,5 @@
     "build": "gulp build",
     "dev": "gulp"
   },
-  "version": "0.45.4"
+  "version": "0.46.0"
 }
