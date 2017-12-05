@@ -1,59 +1,16 @@
 .card
   &__avatar
     background-color: get-color(raiz)
+    border: 3px solid #FFF
+    border-radius: 4px
+    box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
     height: 70px
-    text-indent: -9999px
+    margin: -70px 0 0
+    overflow: hidden
     width: 70px
 
-    &--school
-      border-radius: 4px
-      box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
-      display: block
-      height: 45px
-      margin-left: 20px
-      margin-top: -30px
-      width: 45px
+    img
+      width: 100%
 
-    &--school-big
-      border-radius: 4px
-      box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
-      display: block
-      height: 90px
-      margin: 0 auto -45px
-      position: relative
-      top: -45px
-      width: 90px
-
-    &--teacher
-      border: 5px solid get-color(air)
+    &--rounded
       border-radius: 50%
-      margin: -35px auto 0
-
-    &--teacher-big
-      border: 5px solid get-color(air)
-      border-radius: 50%
-      display: block
-      height: 90px
-      margin: 0 auto -45px
-      position: relative
-      top: -45px
-      width: 90px
-
-    &--list
-      left: -35px
-      margin-top: 15px
-      position: absolute
-
-    +grid-media($breakpoint-medium)
-      &--school
-        height: 65px
-        margin-left: auto
-        margin-right: auto
-        width: 65px
-
-      &--teacher
-        display: block
-        left: initial
-        margin: 0 auto -35px
-        position: relative
-        top: -35px

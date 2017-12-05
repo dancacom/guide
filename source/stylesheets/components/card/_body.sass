@@ -1,26 +1,8 @@
 .card
   &__body
+    align-items: center
     display: flex
     flex-direction: column
-    height: 100%
+    height: calc(100% - 110px)
     justify-content: space-between
     padding: 20px
-    width: 100%
-
-    &--school
-      padding: 10px 20px 20px
-
-    &--teacher
-      padding: 10px 20px 20px
-
-    &--list
-      padding-left: (35px + 10px)
-      padding-top: 20px
-
-    &--unity
-      align-items: flex-start
-      flex-direction: row
-
-    +grid-media($breakpoint-medium)
-      &--teacher
-        padding-left: 20px
