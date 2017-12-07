@@ -1,0 +1,22 @@
+.card-list
+  color: get-color(rock)
+  font-size: 12px
+  font-weight: bold
+  margin: 0
+  padding: 0
+
+  &__item
+    display: inline-block
+    line-height: 20px
+
+    &:not(:first-child)
+      &::before
+        content: '-'
+        margin-right: 4px
+
+  &--dash
+    &__item
+      &:not(:first-child)
+        &::before
+          content: '-'
+          margin-right: 4px

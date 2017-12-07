@@ -2,19 +2,28 @@
   &__avatar
     background-color: get-color(raiz)
     border: 3px solid get-color(air)
-    height: 70px
+    height: 60px
+    left: 0
     overflow: hidden
-    width: 70px
+    position: absolute
+    right: 0
+    width: 60px
 
     img
       width: 100%
 
+    @media screen and (min-width: 720px)
+      height: 80px
+      width: 80px
+
     &--square
       border-radius: 4px
       box-shadow: 0 1px 2px 0 get-color((color: dark, opacity: .1))
-      margin: -70px 0 0
+      margin: -50px auto 0
 
     &--rounded
       border-radius: 50%
-      display: table
-      margin: -60px 0 0
+      margin: 10px 0 0 -30px
+
+      @media screen and (min-width: 720px)
+        margin: -40px auto 0
