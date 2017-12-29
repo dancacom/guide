@@ -7,7 +7,7 @@
     "bourbon-neat": "^2.1.0"
   },
   "devDependencies": {
-    "browser-sync": "2.22.0",
+    "browser-sync": "2.23.0",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "4.0.0",
     "gulp-clean-css": "3.9.1",
