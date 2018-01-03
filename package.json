@@ -14,7 +14,7 @@
     "gulp-imagemin": "4.0.0",
     "gulp-livereload": "3.8.1",
     "gulp-sass": "3.1.0",
-    "run-sequence": "2.2.0"
+    "run-sequence": "2.2.1"
   },
   "description": "Dança.com - Styleguide",
   "homepage": "https://github.com/dancacom/guide#readme",
