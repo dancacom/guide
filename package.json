@@ -4,7 +4,7 @@
     "url": "https://github.com/dancacom/guide/issues"
   },
   "dependencies": {
-    "bourbon-neat": "^2.1.0"
+    "bourbon-neat": "^4.0.0"
   },
   "devDependencies": {
     "browser-sync": "2.23.1",
